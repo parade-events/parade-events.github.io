@@ -14,6 +14,27 @@
       <meta name="keywords" content="iOS,Android,iPhone,App Store,Parade,Northeastern,RSVP,NU,NEU,events,clubs,students,student organizations,student orgs,Northeastern University,Boston,MA,app,application,calendar,events calendar,SGA,university,CS,discover,study">
       <meta name="author" content="Josh Spicer,Carter Tune">
 
+      <script>
+        // Parade is an app full of color, so I couldn't just choose one!
+        // This function picks a random color from a whitelist of good colors.
+        // It then sets the right background color and all links to that color.
+        function changeColor() {
+          var arr = ['#02A4D3', '#b19cd9', '#66cdaa'];
+          var rand = Math.floor(Math.random() * arr.length);
+          var payload = arr[rand];
+          // Background
+          var elements = document.getElementsByClassName('prettyColor');
+          for (var i = 0; i < elements.length; i++) {
+            elements[i].style.backgroundColor = payload;
+          }
+          var fontElements = document.getElementsByClassName('prettyFontColor');
+          //console.log(fontElements);
+          for (var i = 0; i < fontElements.length; i++) {
+            fontElements[i].style.color = payload;
+          }
+          }
+      </script>
+
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118030210-1"></script>
       <script>
@@ -166,7 +187,7 @@
 
                     <p style="padding-bottom:15px;font-size:18px;">
                       Carter is a Computer Science major and currently on co-op in New York!
-                      Carter is developing the Parade back-end, writing some front-end, and communicating
+                      Carter is developing the Parade back-end, writing some frontend, and communicating
                       with others to plan out future steps for Parade.
                   </p>
                 </div>
@@ -188,10 +209,9 @@
 
                     <p style="padding-bottom:15px;font-size:18px;">
                       Josh is a second year studying Computer Science/Cyber Operations.
-                      He hopes to leverage his experience managing large clubs to
-                      create an platform helpful for both students and club organizers.
-                      Josh is developing much of the Parade front-end,
-                      as well as tackling side projects such as this website.
+                      He hopes to leverage his experience managing both small and large clubs to
+                      create a useful platform for all students!  Josh is developing much of the Parade frontend,
+                      building some backend, and tackling side projects such as this website.
                   </p>
                     </div>
                 </div>
@@ -313,26 +333,4 @@
 
 
     </body>
-
-    <script>
-    // Parade is an app full of color, so I couldn't just choose one!
-// This function picks a random color from a whitelist of good colors.
-// It then sets the right background color and all links to that color.
-function changeColor() {
-  var arr = ['#02A4D3', '#b19cd9', '#66cdaa'];
-  var rand = Math.floor(Math.random() * arr.length);
-  var payload = arr[rand];
-  // Background
-  var elements = document.getElementsByClassName('prettyColor');
-  for (var i = 0; i < elements.length; i++) {
-    elements[i].style.backgroundColor = payload;
-  }
-  var fontElements = document.getElementsByClassName('prettyFontColor');
-  //console.log(fontElements);
-  for (var i = 0; i < fontElements.length; i++) {
-    fontElements[i].style.color = payload;
-  }
-}
-</script>
-
 </html>
