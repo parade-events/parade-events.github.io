@@ -1,0 +1,290 @@
+
+/* Font Import */
+@import url('https://fonts.googleapis.com/css?family=Muli');
+
+html,body {
+    /* box-sizing: border-box; */
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Muli', sans-serif;
+    /* font-family: 'Raleway', sans-serif; */
+}
+
+h1 {
+  /* padding-top: 10px;
+  padding-left: 20px; */
+  font-size: 120px;
+  font-weight: bold;
+}
+
+a {
+  /* text-decoration: none; */
+  /* font-weight: bold; */
+  color: #000;
+  /* font-size: 16px; */
+}
+
+
+
+.instagramLogo {
+  padding-left: 13px;
+  padding-top:5px;
+  width: 20px;
+  height: 20px;
+
+}
+
+.mainDescription {
+  font-size: 20px;
+}
+
+.appDownloadButtons {
+  width: 290px;
+  height: 48px;
+  padding-top: 10px;
+  padding-left: 42px;
+  padding-bottom: 20px;
+}
+
+.navBar {
+  position: absolute;
+  padding-left: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: flex-start; */
+  padding-bottom: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navBarElements {
+  padding: 0px;
+  margin: 0px;
+}
+
+.icon {
+  width: 80px;
+  height: 80px;
+}
+
+
+.firstPanelBody {
+  padding-left: 45px;
+  padding-right: 40px;
+  /* text-align: center; */
+  font-size: 23px;
+}
+
+.firstPanelHeading {
+  padding-left: 40px;
+  line-height: 0px;
+  padding-top: 100px;
+}
+
+.firstPanel {
+  flex-direction: row;
+  display: flex;
+}
+
+.secondPanel {
+  text-align: center;
+  padding-left: 420px;
+  padding-right: 420px;
+  padding-bottom: 10px;
+}
+
+
+.meetTheTeam {
+  flex-direction: row;
+  display: flex;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+  /* min-width: 200px; */
+}
+
+.meetTheTeamRow {
+  flex-direction: row;
+  display: flex;
+}
+
+.bio {
+  margin: 20px; /* TODO */
+  font-size: 17px;
+  min-width: 200px;
+  /* margin-right: 20px; */
+
+}
+
+.timeline {
+  padding-right: 28px;
+}
+
+.thirdPanel {
+  text-align: center;
+  padding-left: 450px;
+  padding-right: 450px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.fourthPanel {
+  background-color: #808080;
+  display: flex;
+  /* flex-direction: column; */
+  /* text-align: right; */
+}
+
+
+.iphone {
+  width: 50%;
+  padding-top: 40px;
+  max-width: 425px;
+  max-height: 1000px;
+  display: flex-end;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stickLeft {
+    /* box-sizing: border-box; */
+    float: left;
+    width: 50%;
+    display: flex;
+    /* align-items: center; */
+    align-content: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+}
+.stickRight {
+    /* box-sizing: border-box; */
+    float: right;
+    width: 50%;
+    display: flex;
+    /* align-items: center; */
+    align-items: flex-end;
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+    box-sizing: border-box;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.headshot {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+.stickLeft, .stickRight, .firstPanel {
+        box-sizing: border-box;
+        width: 100%;
+        min-height: inherit;
+        flex-direction: column;
+        padding-bottom: 0px;
+    }
+
+  .firstPanelHeading {
+    padding-left: 15px;
+  }
+
+  .appDownloadButtons {
+    width: 290px;
+    height: 48px;
+    padding: 0;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+  .firstPanelBody {
+    padding-left: 20px;
+  }
+
+  .secondPanel {
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .bio {
+    margin: 10px;
+    /* TODO better mobile support */
+  }
+
+
+  .meetTheTeam {
+    padding: 0px;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+    /* padding-left: 320px; */
+    /* padding-right: 320px; */
+    text-align: center;
+    /* min-width: 200px; */
+  }
+
+  .meetTheTeamRow {
+    flex-direction: column;
+    display: flex;
+  }
+
+
+  .thirdPanel {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .fourthPanel {
+
+  }
+
+  .iphone {
+      width: 60%;
+      padding-top: 5px;
+  }
+
+  html,body {
+        overflow:auto;
+  }
+
+  .appDownloadButtons {
+
+  }
+
+  .navBar {
+
+  }
+
+  h1 {
+    padding-top: 40px;
+    font-size: 85px;
+  }
+}
+
+/* thanks to http://adis.ca/entry/2011/pretty-code-block-in-css/ for code css*/
+code {
+        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+        font-size: 22px;
+        color: #B73650;
+        line-height: 140%;
+        white-space: pre;
+        white-space: pre-wrap;
+        white-space: -moz-pre-wrap;
+        white-space: -o-pre-wrap;
+        background: #F8F2F4;
+}
+
+#content code {
+        display: block;
+        padding: 0.5em 1em;
+        border: 1px solid #bebab0;
+}
