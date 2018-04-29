@@ -18,26 +18,27 @@
         // Parade is an app full of color, so I couldn't just choose one!
         // This function picks a random color from a whitelist of good colors.
         // It then sets the right background color and all links to that color.
-        function changeColor() {
-          var arr = ['#02A4D3', '#b19cd9', '#66cdaa'];
-          var rand = Math.floor(Math.random() * arr.length);
-          var payload = arr[rand];
-          // Background
-          var elements = document.getElementsByClassName('prettyColor');
-          for (var i = 0; i < elements.length; i++) {
-            elements[i].style.backgroundColor = payload;
-          }
-          var fontElements = document.getElementsByClassName('prettyFontColor');
-          //console.log(fontElements);
-          for (var i = 0; i < fontElements.length; i++) {
-            fontElements[i].style.color = payload;
-          }
-          }
+        // function changeColor() {
+        //   // Color whitelist
+        //   var arr = ['#02A4D3'], '#b19cd9', '#66cdaa'];
+        //   var rand = Math.floor(Math.random() * arr.length);
+        //   var payload = arr[rand];
+        //   // Background
+        //   var elements = document.getElementsByClassName('prettyColor');
+        //   for (var i = 0; i < elements.length; i++) {
+        //     elements[i].style.backgroundColor = payload;
+        //   }
+        //   var fontElements = document.getElementsByClassName('prettyFontColor');
+        //   for (var i = 0; i < fontElements.length; i++) {
+        //     fontElements[i].style.color = payload;
+        //     }
+        //   }
       </script>
 
       <title>Parade app</title>
   </head>
-      <body onload='changeColor()'>
+      <!-- <body onload='changeColor()'> -->
+      <body>
         <div class="row">
             <!-- START FIRST PANEL -->
             <div class='prettyColor firstPanel'>
@@ -173,11 +174,12 @@
                       </a>
                     </div>
 
-                    <h2 style="margin-top: 8px;font-size:30px">Carter Tune</h2>
+                    <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Carter Tune</h2>
+                    <h3 style="margin:0px">Developer</h3>
 
-                    <p style="padding-bottom:15px;font-size:18px;">
+                    <p style="font-size:16px;">
                       Carter is a Computer Science major and currently on co-op in New York!
-                      Carter is developing the Parade back-end, writing some frontend, and communicating
+                      Carter is developing the Parade back end, writing some front end, and communicating
                       with others to plan out future steps for Parade.
                   </p>
                 </div>
@@ -195,13 +197,14 @@
                       </a>
                     </div>
 
-                    <h2 style="margin-top: 8px;font-size:30px">Josh Spicer</h2>
+                    <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Josh Spicer</h2>
+                    <h3 style="margin:0px">Developer</h3>
 
-                    <p style="padding-bottom:15px;font-size:18px;">
+                    <p style="font-size:16px;">
                       Josh is a second year studying Computer Science/Cyber Operations.
                       He hopes to leverage his experience managing both small and large clubs at Northeastern to
-                      create a useful platform for all students!  Josh is developing much of the Parade frontend,
-                      building some backend, and tackling side projects (such as this website).
+                      create a useful platform for all students!  Josh is developing much of the Parade front end,
+                      building some back end, and tackling side projects (such as this website).
                   </p>
                     </div>
                 </div>
@@ -216,12 +219,13 @@
                       <img style="padding:10px;width:30px;height:30px"src='./assets/social/website.png'/>
                     </a> -->
                     <a style="text-decoration: none" href="mailto:kathleen@parade.events">
-                      <img style="padding:10px;width:30px;height:30px"src='./assets/social/email.png'/>
+                      <img style="padding:10px;padding-bottom: 14px;width:30px;height:30px"src='./assets/social/email.png'/>
                     </a>
                   </div>
-                  <h2 style="margin-top: 8px;font-size:30px">Kathleen Ballard</h2>
+                  <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Kathleen Ballard</h2>
+                  <h3 style="margin:0px">Outreach</h3>
 
-                  <p style="font-size:18px;">
+                  <p style="font-size:16px;">
                     Kathleen is a second-year pharmacy student currently on co-op in Cape Cod.
                     Kathleen works on communication and outreach initiatives for Parade,
                     utilizing connections with SGA and Northeastern to help promote and improve the app.
@@ -241,9 +245,10 @@
                             <img style="padding:10px;width:30px;height:30px"src='./assets/social/email.png'/>
                           </a>
                       </div>
-                        <h2 style="margin-top: 8px;font-size:30px">Pranita Lokinendi</h2>
+                        <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Pranita Lokinendi</h2>
+                        <h3 style="margin:0px">Designer</h3>
 
-                        <p style="font-size:18px;">
+                        <p style="font-size:16px;">
                           Pranita is a second year Interaction Design student, as well as a freelance graphic designer.
                           She works as Parade’s UI/UX designer, ensuring both that the application’s interface is aesthetically
                           pleasing and that users have positive experiences.
@@ -304,7 +309,7 @@
 
         <h2 style="font-size: 50px;margin-bottom:10px;margin-top:15px">Follow us!</h2>
           <div>
-            <a style="text-decoration: none" href="https://instagram.com/parade_evts">
+            <a style="text-decoration: none" href="https://instagram.com/paradeapp">
               <img style="padding:5px;width:50px;height:50px"src='./assets/social/instagram.png'/>
             </a>
             <a style="text-decoration: none" href="https://facebook.com/paradeeventsapp">

@@ -24,6 +24,13 @@ a {
   /* font-size: 16px; */
 }
 
+.prettyColor {
+  background-color: #02A4D3;
+}
+
+.prettyFontColor {
+  color: #02A4D3;
+}
 
 
 .instagramLogo {
