@@ -1,2 +1,1 @@
-# parade.github.io
-# parade.github.io
+Website for Parade!
