@@ -54,6 +54,11 @@ a {
   padding-left:10px;
 }
 
+.paradeTitle {
+  width:450px;
+  height:139px;
+}
+
 .mainDescription {
   font-size: 20px;
 }
@@ -75,10 +80,11 @@ a {
 }
 
 .navBarElements {
-  padding: 0px;
-  margin-right: 10px;
+  padding-top: 30px;
   display: flex;
+  margin-right: 10px;
   flex-direction: row;
+  align-content: stretch;
 }
 
 .icon {
@@ -202,6 +208,21 @@ a {
   height: 130px;
   border-radius: 50%;
 }
+
+/* when we get to 600px */
+@media screen and (max-width: 600px) {
+  .paradeTitle {
+    width: 90%;
+    height: auto;
+  }
+
+  .logoAndName {
+    align-items: center;
+  }
+
+}
+
+
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1200px) {
