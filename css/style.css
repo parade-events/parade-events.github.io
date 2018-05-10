@@ -18,9 +18,9 @@ h1 {
 }
 
 a {
-  /* text-decoration: none; */
+  text-decoration: none;
   /* font-weight: bold; */
-  color: #000;
+  color: #fff;
   /* font-size: 16px; */
 }
 
@@ -41,15 +41,20 @@ a {
 
 }
 
+.logoAndName {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 60px;
+}
+
 .mainDescription {
   font-size: 20px;
 }
 
 .appDownloadButtons {
-  width: 290px;
-  height: 48px;
-  padding-top: 10px;
-  padding-left: 42px;
+  width: 260px;
+  height: 43px;
+  padding-left: 45px;
   padding-bottom: 20px;
 }
 
@@ -57,17 +62,16 @@ a {
   position: absolute;
   padding-left: 20px;
   padding-top: 20px;
-  display: flex;
-  flex-direction: row;
-  /* justify-content: flex-start; */
-  padding-bottom: 20px;
-  font-weight: bold;
+  padding-bottom: 0px;
   font-size: 20px;
+  right: 100px;
 }
 
 .navBarElements {
   padding: 0px;
-  margin: 0px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: row;
 }
 
 .icon {
@@ -86,12 +90,12 @@ a {
 .firstPanelHeading {
   padding-left: 40px;
   line-height: 0px;
-  padding-top: 100px;
 }
 
 .firstPanel {
   flex-direction: row;
   display: flex;
+  color: #fff;
 }
 
 .secondPanel {
@@ -135,6 +139,7 @@ a {
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
+  color: #fff;
 }
 
 .fourthPanel {
@@ -146,8 +151,9 @@ a {
 
 
 .iphone {
-  width: 50%;
-  padding-top: 40px;
+  width: 70%;
+  padding-top: 130px;
+  padding-left:0px;
   max-width: 425px;
   max-height: 1000px;
   display: flex-end;
@@ -204,6 +210,14 @@ a {
     padding-left: 15px;
   }
 
+    /* in mobile view */
+  .logoAndName {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
+
   .appDownloadButtons {
     width: 290px;
     height: 48px;
@@ -214,6 +228,7 @@ a {
 
   .firstPanelBody {
     padding-left: 20px;
+
   }
 
   .secondPanel {

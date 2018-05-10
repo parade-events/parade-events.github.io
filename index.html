@@ -1,6 +1,6 @@
 <!-- <!DOCTYPE html> -->
 <!--Written for use by the creators of Parade: Carter Tune and Josh Spicer -->
-<!--Contact: josh@parade.events -->
+<!--Contact: josh<@>parade.events -->
 <html>
   <link href='./css/style.css' rel="stylesheet">
   <link href='./css/timeline.css' rel="stylesheet">
@@ -43,11 +43,11 @@
             <!-- START FIRST PANEL -->
             <div class='prettyColor firstPanel'>
                   <div class='navBar'>
-                      <img class='icon' src=./assets/icon.png />
-                      <!-- <span class='navBarElements'> -->
-                        <p style="padding-left: 18px;padding-top:7px;font-size:18px"><a href='#Details'>Details</a></p>
-                        <p style="padding-left: 13px;padding-top:7px;font-size:18px"><a href='#Contact'>Join The Parade!</a></p>
-                      <!-- </span> -->
+                      <!-- <img class='icon' src=./assets/icon.png /> -->
+                      <span class='navBarElements'>
+                        <p style="padding-left: 18px;padding-top:7px;font-size:22px"><a href='#Details'>Details</a></p>
+                        <p style="padding-left: 13px;padding-top:7px;font-size:22px"><a href='#Contact'>Join The Parade!</a></p>
+                      </span>
                    </div>
                      <div class="stickLeft">
                        <div class="firstPanelHeading">
@@ -56,13 +56,17 @@
                            Please consider enabling Javascript for the full
                            experience!
                          </noscript>
-                         <h1>Parade</h1>
-                         <h2 style="padding-left: 5px;line-height: 27px;font-size:27px;">An events app for Northeastern clubs.</h2>
+                         <div class='logoAndName'>
+                           <img class='icon' style="width:auto;height:auto;padding-right:20px" src=./assets/icon.png />
+                           <span style='display: flex;flex-direction: column;padding-top:20px;padding-left:10px'>
+                              <img class='icon' style="width:auto;height:16%" src=./assets/parade_font_white.png />
+                              <h2 style="margin-top: 5px;line-height: 27px;font-size:26px;">An events app for Northeastern clubs.</h2>
+                            </span>
+                          </div>
                        </div>
                        <p class="firstPanelBody">
-                         Northeastern has <b>hundreds</b> of events
-                         each week.
-                         <br><u>Discover them</u> with Parade.
+                         Northeastern has <b>hundreds</b> of events each week.
+                         <br>Discover them with Parade.
                        </p>
                        <img
                        onclick="alert('Coming soon! Sign up for our mailing list below for more info!')"
@@ -329,10 +333,12 @@
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118030210-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'UA-118030210-1');
-      </script>
+function gtag() {
+  dataLayer.push(arguments);
+}
+gtag("js", new Date());
+gtag("config", "UA-118030210-1");
+</script>
       <!-- End Google Analytics -->
 
     </body>
