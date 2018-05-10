@@ -47,6 +47,13 @@ a {
   padding-bottom: 60px;
 }
 
+.paradeNameWithShortDescription {
+  display:flex;
+  flex-direction: column;
+  padding-top:20px;
+  padding-left:10px;
+}
+
 .mainDescription {
   font-size: 20px;
 }
