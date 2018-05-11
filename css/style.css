@@ -25,11 +25,11 @@ a {
 }
 
 .prettyColor {
-  background-color: #02A4D3;
+  background-color: #479ec6;
 }
 
 .prettyFontColor {
-  color: #02A4D3;
+  color: #479ec6;
 }
 
 
@@ -85,6 +85,8 @@ a {
   margin-right: 10px;
   flex-direction: row;
   align-content: stretch;
+  font-weight: bold;
+
 }
 
 .icon {
