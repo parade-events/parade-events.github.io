@@ -18,10 +18,7 @@ h1 {
 }
 
 a {
-  text-decoration: none;
-  /* font-weight: bold; */
   color: #fff;
-  /* font-size: 16px; */
 }
 
 .prettyColor {
@@ -166,11 +163,11 @@ a {
 
 
 .iphone {
-  width: 70%;
+  /* width: 70%; */
   padding-top: 130px;
-  padding-left:0px;
-  max-width: 425px;
-  max-height: 1000px;
+  padding-left:200px;
+  max-width: 500px;
+  max-height: 700px;
   display: flex-end;
   margin-left: auto;
   margin-right: auto;
@@ -188,11 +185,8 @@ a {
     padding-bottom: 20px;
 }
 .stickRight {
-    /* box-sizing: border-box; */
-    float: right;
-    width: 50%;
+    width: 100%;
     display: flex;
-    /* align-items: center; */
     align-items: flex-end;
 }
 
@@ -227,7 +221,7 @@ a {
 
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1300px) {
 .stickLeft, .stickRight, .firstPanel {
         box-sizing: border-box;
         width: 100%;
@@ -302,6 +296,8 @@ a {
   .iphone {
       width: 60%;
       padding-top: 5px;
+      padding-left:0px;
+
   }
 
   html,body {
