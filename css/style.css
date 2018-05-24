@@ -293,8 +293,8 @@ a {
 
   }
 
-  .iphone {
-      width: 60%;
+   .iphone {
+      /* width: 60%; */
       padding-top: 5px;
       padding-left:0px;
 
