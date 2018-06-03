@@ -230,6 +230,12 @@ a {
         padding-bottom: 0px;
     }
 
+  .navBar {
+      right: 0;
+      top: 10;
+      left: 25;
+  }
+
   .firstPanelHeading {
     padding-left: 15px;
   }
@@ -304,13 +310,7 @@ a {
         overflow:auto;
   }
 
-  .appDownloadButtons {
 
-  }
-
-  .navBar {
-
-  }
 
   h1 {
     padding-top: 40px;
