@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "V3AVXCHMVA.com.paradeevents.parade",
+                "paths": [ "/event/*", "/org/*", "/user/*"]
+            }
+        ]
+    }
+}
