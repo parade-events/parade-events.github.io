@@ -4,7 +4,7 @@
         "details": [
             {
                 "appID": "V3AVXCHMVA.com.paradeevents.parade",
-                "paths": [ "/event/*", "/org/*", "/user/*"]
+                "paths": [ "/event/*","e/*","/org/*","o/","/user/*"]
             }
         ]
     }
