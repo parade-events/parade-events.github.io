@@ -274,10 +274,10 @@ a {
 
 
   .meetTheTeam {
+    display: flex;
     padding: 0px;
     justify-content: center;
     flex-direction: column;
-    display: flex;
     /* padding-left: 320px; */
     /* padding-right: 320px; */
     text-align: center;
