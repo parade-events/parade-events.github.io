@@ -1,13 +1,13 @@
-
 /* Font Import */
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url("https://fonts.googleapis.com/css?family=Quicksand");
 
-html,body {
-    /* box-sizing: border-box; */
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Quicksand', sans-serif;
-    /* font-family: 'Raleway', sans-serif; */
+html,
+body {
+  /* box-sizing: border-box; */
+  margin: 0px;
+  padding: 0px;
+  font-family: "Quicksand", sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
 }
 
 h1 {
@@ -17,8 +17,53 @@ h1 {
   font-weight: bold;
 }
 
-a {
+.whiteLink {
   color: #fff;
+}
+
+.infoIcon {
+  width: 15px;
+  height: 15px;
+  padding-right: 5px;
+}
+
+#instafeed {
+  /* border-style: solid;
+  border-width: 1px;
+  border-color: #000; */
+}
+
+#instaFeedContainer {
+  padding-left: 45px;
+  font-size: 23px;
+  width: 40%;
+}
+
+.instaFeedDescription {
+  font-size: 12px;
+}
+
+/* main */
+.announcePanel {
+  padding-left: 45px;
+  padding-right: 40px;
+  /* text-align: center; */
+  font-size: 23px;
+  width: 50%;
+  float: right;
+}
+
+/* main */
+.announceTitle {
+  text-decoration: none;
+  color: #479ec6;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* main */
+.announceDescription {
+  font-size: 16px;
 }
 
 .prettyColor {
@@ -29,13 +74,11 @@ a {
   color: #479ec6;
 }
 
-
 .instagramLogo {
   padding-left: 13px;
-  padding-top:5px;
+  padding-top: 5px;
   width: 20px;
   height: 20px;
-
 }
 
 .logoAndName {
@@ -45,15 +88,15 @@ a {
 }
 
 .paradeNameWithShortDescription {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  padding-top:20px;
-  padding-left:10px;
+  padding-top: 20px;
+  padding-left: 10px;
 }
 
 .paradeTitle {
-  width:430px;
-  height:133px;
+  width: 430px;
+  height: 133px;
 }
 
 .mainDescription {
@@ -69,12 +112,11 @@ a {
 }
 
 .dlButton {
-  width:25%;
-  height:auto;
-  padding-right:0;
-  margin-right:0
+  width: 25%;
+  height: auto;
+  padding-right: 0;
+  margin-right: 0;
 }
-
 
 .navBar {
   position: absolute;
@@ -92,15 +134,13 @@ a {
   flex-direction: row;
   align-content: stretch;
   font-weight: bold;
-
 }
 
 .icon {
-  width:250px;
-  height:250px;
-  padding-right:20px;
+  width: 250px;
+  height: 250px;
+  padding-right: 20px;
 }
-
 
 .firstPanelBody {
   padding-left: 45px;
@@ -109,12 +149,6 @@ a {
   font-size: 23px;
 }
 
-.announcePanelBody {
-  padding-left: 45px;
-  padding-right: 40px;
-  /* text-align: center; */
-  font-size: 23px;
-}
 
 
 .firstPanelHeading {
@@ -135,7 +169,6 @@ a {
   padding-bottom: 10px;
 }
 
-
 .meetTheTeam {
   flex-direction: row;
   display: flex;
@@ -155,7 +188,6 @@ a {
   font-size: 17px;
   min-width: 200px;
   /* margin-right: 20px; */
-
 }
 
 .timeline {
@@ -179,11 +211,10 @@ a {
   /* text-align: right; */
 }
 
-
 .iphone {
   /* width: 70%; */
   padding-top: 130px;
-  padding-left:200px;
+  padding-left: 200px;
   max-width: 500px;
   max-height: 700px;
   display: flex-end;
@@ -192,29 +223,28 @@ a {
 }
 
 .stickLeft {
-    /* box-sizing: border-box; */
-    float: left;
-    width: 50%;
-    display: flex;
-    /* align-items: center; */
-    align-content: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-bottom: 20px;
+  /* box-sizing: border-box; */
+  float: left;
+  width: 50%;
+  display: flex;
+  /* align-items: center; */
+  align-content: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 20px;
 }
 .stickRight {
-    width: 100%;
-    display: flex;
-    align-items: flex-end;
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
 }
-
 
 /* Clear floats after the columns */
 .row:after {
-    box-sizing: border-box;
-    content: "";
-    display: table;
-    clear: both;
+  box-sizing: border-box;
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .headshot {
@@ -234,29 +264,36 @@ a {
     align-items: center;
   }
 
+  /* mobile view */
+  .announcePanel {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+    width: 90%;
+  }
 }
-
-
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 1300px) {
-.stickLeft, .stickRight, .firstPanel {
-        box-sizing: border-box;
-        width: 100%;
-        min-height: inherit;
-        flex-direction: column;
-        padding-bottom: 0px;
-    }
+  .stickLeft,
+  .stickRight,
+  .firstPanel {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: inherit;
+    flex-direction: column;
+    padding-bottom: 0px;
+  }
 
   .navBar {
-      right: 0;
-      top: 10;
-      left: 25;
+    right: 0;
+    top: 10;
+    left: 25;
   }
 
   .icon {
-    width:180px;
-    height:180px;
+    width: 180px;
+    height: 180px;
     padding-left: 20px;
   }
 
@@ -264,7 +301,7 @@ a {
     padding-left: 15px;
   }
 
-    /* in mobile view */
+  /* in mobile view */
   .logoAndName {
     padding-top: 150px;
     display: flex;
@@ -272,15 +309,16 @@ a {
     padding-bottom: 0px;
   }
 
+
   .appDownloadButtons {
     /* display: flex; */
     /* flex-direction: column; */
     padding-left: 0px;
     padding-bottom: 20px;
     text-decoration: none;
-    display:block;
+    display: block;
     align-items: center;
-    text-align:center;
+    text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
@@ -288,12 +326,10 @@ a {
   .dlButton {
     width: 50%;
     padding-bottom: 10px;
-
   }
 
   .firstPanelBody {
     padding-left: 20px;
-
   }
 
   .secondPanel {
@@ -311,7 +347,6 @@ a {
     /* TODO better mobile support */
   }
 
-
   .meetTheTeam {
     display: flex;
     padding: 0px;
@@ -328,30 +363,26 @@ a {
     display: flex;
   }
 
-
   .thirdPanel {
     padding-left: 20px;
     padding-right: 20px;
   }
 
   .fourthPanel {
-
   }
 
-   .iphone {
-       width: 80%;
-      padding-top: 5px;
-      padding-left:0px;
-      /* HIDE? */
-      display: none;
-
+  .iphone {
+    width: 80%;
+    padding-top: 5px;
+    padding-left: 0px;
+    /* HIDE? */
+    display: none;
   }
 
-  html,body {
-        overflow:auto;
+  html,
+  body {
+    overflow: auto;
   }
-
-
 
   h1 {
     padding-top: 40px;
@@ -361,19 +392,19 @@ a {
 
 /* thanks to http://adis.ca/entry/2011/pretty-code-block-in-css/ for code css*/
 code {
-        font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
-        font-size: 22px;
-        color: #B73650;
-        line-height: 140%;
-        white-space: pre;
-        white-space: pre-wrap;
-        white-space: -moz-pre-wrap;
-        white-space: -o-pre-wrap;
-        background: #F8F2F4;
+  font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+  font-size: 22px;
+  color: #b73650;
+  line-height: 140%;
+  white-space: pre;
+  white-space: pre-wrap;
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  background: #f8f2f4;
 }
 
 #content code {
-        display: block;
-        padding: 0.5em 1em;
-        border: 1px solid #bebab0;
+  display: block;
+  padding: 0.5em 1em;
+  border: 1px solid #bebab0;
 }

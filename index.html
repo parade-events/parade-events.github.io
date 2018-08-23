@@ -42,8 +42,8 @@
                   <div class='navBar'>
                       <!-- <img class='icon' src=./assets/icon.png /> -->
                       <span class='navBarElements'>
-                        <a href='https://parade.events/blog' alt="Parade Blog" style='text-decoration: none;padding-right:20px'>Blog</a>
-                        <a style='text-decoration: none;  white-space: nowrap' href='#Contact'>Join The Parade!</a>
+                        <a class="whiteLink" href='https://parade.events/blog' alt="Parade Blog" style='text-decoration: none;padding-right:20px'>Blog</a>
+                        <a class="whiteLink" style='text-decoration: none;  white-space: nowrap' href='#Contact'>Join The Parade!</a>
                       </span>
                    </div>
                      <div class="stickLeft">
@@ -85,14 +85,20 @@
                 </div>
 
                 <!-- Start Announce Panel -->
-                <div id="announce" class=" announcePanel">
-                  <div class=' annoucePanelBody '>
-                  <span id='announce'> Loading Annoucements... <span/>
-                  </div>
-
-
+                <div class="announcePanel">
+                  <h2>Announcements</h2>
+                  <span id="announce"> Loading Announcements...</span>
+                        <!-- End Announce Panel  -->
                 </div>
-                <!-- End Announce Panel  -->
+
+                <div id="instaFeedContainer">
+                  <h2>Spotlight</h2>
+                      <div id="instafeed"></div>
+                </div>
+
+
+
+
 
             <!-- START SECOND PANEL -->
             <div id="Details" class="secondPanel">
@@ -134,7 +140,8 @@
       </li>
       <li class="li complete">
         <div class="timestamp">
-          <span class="author complete">MVP Created</span>
+          <span class="a
+          uthor complete">MVP Created</span>
         </div>
         <div class="status">
           <h4>April</h4>
@@ -289,13 +296,13 @@
               <h2 style="font-size: 50px;margin-bottom:15px">New to Parade?</h2>
               <p style="font-size:20px;margin-top:0px">
                 Check out our latest blog post:
-                <a href="https://parade.events/blog/welcome-guide">The Parade Welcome Guide</a>.
+                <a class="whiteLink" href="https://parade.events/blog/welcome-guide">The Parade Welcome Guide</a>.
 
               </p>
 
               <h2 style="font-size: 50px;margin-bottom:15px">Idea or Feedback?</h2>
               <p style="font-size:20px;margin-top:0px">
-                Find a bug? Have a feature request? We'd love to <a href="mailto:feedback@parade.events">hear from you</a>.
+                Find a bug? Have a feature request? We'd love to <a class="whiteLink" href="mailto:feedback@parade.events">hear from you</a>.
               </p>
 
               <h2 style="font-size: 50px;margin-bottom:15px">Stay informed!</h2>
@@ -340,10 +347,10 @@
         <!-- Thanks for the logos: https://www.iconsdb.com/white-icons/facebook-like-3-icon.html -->
         <h2 style="font-size: 50px;margin-bottom:10px;margin-top:15px">Follow us!</h2>
           <div>
-            <a style="text-decoration: none" href="https://instagram.com/paradeapp">
+            <a class="whiteLink" style="text-decoration: none" href="https://instagram.com/paradeapp">
               <img style="padding:5px;width:50px;height:50px"src='./assets/social/instagram-white.png'/>
             </a>
-            <a style="text-decoration: none" href="https://facebook.com/paradeeventsapp">
+            <a class="whiteLink" style="text-decoration: none" href="https://facebook.com/paradeeventsapp">
               <img style="padding:5px;width:50px;height:50px"src='./assets/social/facebook-white.png'/>
             </a>
           </div>
@@ -355,7 +362,7 @@
 
             <!--- START FOURTH PANEL -->
             <div id="Footer" class="fourthPanel">
-            <a href="mailto:hello@parade.events"><b>Parade &copy 2018</b></a>
+            <a class="whiteLink" href="mailto:hello@parade.events"><b>Parade &copy 2018</b></a>
             </div>
 
         </div>
@@ -363,6 +370,23 @@
 
         <!-- Functions -->
         <script src="/functions/announceAPI.js"></script>
+        <script type="text/javascript" src="/functions/instafeed.min.js"></script>
+        <script type="text/javascript">
+        var feed = new Instafeed({
+  get: "user",
+  userId: "7295831123",
+  accessToken: "7295831123.e303501.97a21cb4545749d2baeb34a2421a74d6", //scoped only to read public data.
+  limit: 1,
+  resolution: "low_resolution",
+  error: function(image) {
+    document.getElementById('instafeed').innerHTML='No Spotlight<br><br><br><br><br><br><br><br><br>';
+  },
+  template: '<p class="instaFeedDescription">{{caption}}</p><a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
+
+});
+feed.run();
+</script>
+
 
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
