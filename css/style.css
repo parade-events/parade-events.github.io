@@ -69,7 +69,7 @@ a {
 }
 
 .dlButton {
-  width:30%;
+  width:25%;
   height:auto;
   padding-right:0;
   margin-right:0
@@ -257,6 +257,7 @@ a {
   .icon {
     width:180px;
     height:180px;
+    padding-left: 20px;
   }
 
   .firstPanelHeading {
@@ -285,7 +286,7 @@ a {
   }
 
   .dlButton {
-    width:50%;
+    width: 50%;
     padding-bottom: 10px;
 
   }
