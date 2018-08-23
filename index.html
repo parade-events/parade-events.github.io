@@ -1,6 +1,6 @@
 <!-- <!DOCTYPE html> -->
 <!--Written for use by the creators of Parade: Carter Tune and Josh Spicer -->
-<!--Contact: josh<<@>>parade.events -->
+<!--Contact: josh<<@>>___parade.events -->
 <html>
   <link href='./css/style.css' rel="stylesheet">
   <link href='./css/timeline.css' rel="stylesheet">
@@ -54,7 +54,7 @@
                            experience!
                          </noscript>
                          <div class='logoAndName'>
-                           <img class='icon' style="width:250px;height:250px;padding-right:20px" src=./assets/RoundedIcon.png />
+                           <img class='icon' src=./assets/RoundedIcon.png />
                            <div class='paradeNameWithShortDescription'>
                               <img class='paradeTitle' src=./assets/parade_font_white.png />
                               <h2 style="margin-top: 8px;line-height: 27px;font-size:25.5px;">An events app for Northeastern clubs.</h2>
@@ -65,24 +65,34 @@
                          Northeastern has <strong>hundreds</strong> of events each week.
                          <br>Discover them with Parade.
                        </p>
-                     <div style="flex-direction: row">
-                       <a href="https://itunes.apple.com/us/app/parade-events/id1380171412?ls=1&mt=8">
-                       <img
-                       style="width:25%;height:auto;padding-right:0;margin-right:0"
-                       class='appDownloadButtons'
-                       src='./assets/app-store-badge.svg' /></a>
-                       <a href="#">
-                       <img
-                       onclick="alert('Android beta starting late August! Join our mailing list below for additional info.')"
-                       style="width:25%;height:auto;padding-left:0;margin-left:0"
-                       class='appDownloadButtons'
-                       src='./assets/play-store-badge.png' /></a>
+                     <div class="appDownloadButtons">
+                       <a style="text-decoration: none" href="https://itunes.apple.com/us/app/parade-events/id1380171412">
+                         <img
+                         class="dlButton"
+                         src='./assets/app-store-badge.svg' />
+                          </a>
+                       <a style="text-decoration: none" href="#">
+                        <img
+                        onclick="alert('Android beta starting late August! Join our mailing list below for additional info.')"
+                        class="dlButton"
+                        src='./assets/play-store-badge.png' />
+                         </a>
                      </div>
                  </div>
                      <!-- <div class="stickRight"> -->
                           <img class='iphone' src='./assets/aoun-partial.png'>
                       <!-- </div> -->
                 </div>
+
+                <!-- Start Announce Panel -->
+                <div id="announce" class=" announcePanel">
+                  <div class=' annoucePanelBody '>
+                  <span id='announce'> Loading Annoucements... <span/>
+                  </div>
+
+
+                </div>
+                <!-- End Announce Panel  -->
 
             <!-- START SECOND PANEL -->
             <div id="Details" class="secondPanel">
@@ -360,6 +370,12 @@
             </div>
 
         </div>
+
+
+        <!-- Functions -->
+        <script src="/functions/announceAPI.js"></script>
+
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118030210-1"></script>
         <script>
