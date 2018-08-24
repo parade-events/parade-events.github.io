@@ -17,7 +17,7 @@ xhttp.onreadystatechange = function() {
       var str = [
         "<span>",
         '<img class="infoIcon" src="/assets/info-white.png">',
-        '"<b><a class="announceTitle" href="',
+        '<b><a class="announceTitle" href="',
         item.link,
         '">',
         item.title,
