@@ -47,7 +47,7 @@
                       <!-- <img class='icon' src=./assets/icon.png /> -->
                       <span class='navBarElements'>
                         <a class="whiteLink" href='https://parade.events/blog' alt="Parade Blog" style='text-decoration: none;padding-right:20px'>Blog</a>
-                        <a class="whiteLink" style='text-decoration: none;  white-space: nowrap' href='#Contact'>Join The Parade!</a>
+                        <a class="whiteLink" style='text-decoration: none;  white-space: nowrap' href='#Contact'>Contact</a>
                       </span>
                    </div>
                      <div class="stickLeft">
@@ -94,7 +94,7 @@
             <!-- Start DYnamic Panel -->
           <div class="dynamicPanel" >
 
-            <img class="" style="padding-left:80px;width:auto;height:800px" src="./assets/aoun-may10.png" />
+            <img class="bigAppPhoto" style="padding-left:80px;width:auto;height:800px" src="./assets/spotlight.png" />
 
             <div id="Details" class= " secondPanel">
               <h2 class="prettyFontColor" style="font-size:60px;margin-bottom:25px">Meet Parade.</h2>
@@ -228,12 +228,19 @@
 
               <div id="leftContact">
                   <h2 style="font-size: 50px;margin-bottom:15px">Contact Us!</h2>
+                  <div class="contactDescriptionStyle">
+                  <p>
+                    Parade is currently in beta and looking for any and all feedback. Let us
+                    know your feature requests, bugs, or general thoughts. For spotlight submissions or other inquiries,
+                    a member of the Parade team will follow up with you at the address you provide.
+                  </p>
+                </div>
               <form id="contact-form" method="post">
                     <h2>Name</h2>
-                    <input type="text" placeholder="Your Name" id="contact-name" class="form-control singleLineContactField"  />
+                    <input type="text" placeholder="  Joseph Aoun" id="contact-name" class="form-control singleLineContactField"  />
                     <br>
                     <h2>Email</h2>
-                    <input type="email" placeholder="Your Email" id="contact-email" class="form-control singleLineContactField" />
+                    <input type="email" placeholder="  aoun@neu.edu" id="contact-email" class="form-control singleLineContactField" />
                     <br>
                     <h2>Feedback</h2>
                     <textarea rows="10" id="contact-feedback" placeholder="Enter your message…" class="form-control multiLineContactField">
@@ -242,7 +249,7 @@
                     <button type="button" style="margin-top:20px;" onClick="lambdaEmailSubmit()" class="btn" >Submit Feedback</button>
                     <!-- TODO: Add some kind of capcha/CSRF -->
               </form>
-              
+
               <h2 style="font-size: 50px;margin-bottom:10px;margin-top:15px">Follow us!</h2>
                 <div>
                   <a class="whiteLink" style="text-decoration: none" href="https://instagram.com/paradeapp">
@@ -257,13 +264,13 @@
             <div id="rightContact">
 
 
-              <h2 style="font-size: 50px;margin-bottom:15px">New to Parade?</h2>
-              <p style="font-size:20px;margin-top:0px">
-                Check out our latest blog post:
-                <a class="whiteLink" href="https://parade.events/blog/welcome-guide">The Parade Welcome Guide</a>.
-              </p>
+              <h2 style="font-size: 50px;margin-bottom:15px">Latest Blog Post</h2>
+               <a style="text-decoration:none;color:'#fff'" href=" https://parade.events/blog/welcome-guide/ ">
+                 <div class="announceTitle"><img class="infoIcon" src="./assets/info-white.png/">  Parade Welcome Guide</div>
+               <div class="announceDescription"> Aug. 21 -    Welcome to Parade! Everybody on The Parade Team is so excited
+                 to get Parade in the  hands of students! We’re calling this initial launch our “Beta Phase”, where we encourage...</div></a></span>
 
-              <h2 class="" style="font-size:60px;margin-bottom:25px">Announcements</h2>
+              <h2 class="" style="font-size:60px;margin-bottom:25px">News</h2>
               <span id="announce"> Loading Announcements...</span>
 
               <h2 style="font-size: 50px;margin-bottom:15px">Stay informed!</h2>
@@ -312,35 +319,15 @@
 
 
             <!--- START FOURTH PANEL -->
-            <div id="Footer" class="fourthPanel">
+            <!-- <div id="Footer" class="fourthPanel">
             <a class="whiteLink" href="mailto:hello@parade.events"><b>Parade &copy 2018</b></a>
             </div>
 
-        </div>
+        </div> -->
 
 
         <!-- Josh Functions -->
         <script src="/functions/announceAPI.js"></script>
-        <!-- <script type="text/javascript" src="/functions/instafeed.min.js"></script>
-        <script>
-window.onload = function what() {
-  var feed = new Instafeed({
-    get: "user",
-    userId: "7295831123",
-    accessToken: "7295831123.e303501.97a21cb4545749d2baeb34a2421a74d6", //scoped only to read public data.
-    limit: 1,
-    resolution: "standard_resolution",
-    error: function(image) {
-      document.getElementById("instafeed").innerHTML = "No Spotlight<br>";
-    },
-    success: function(res) {
-      document.getElementById("instafeedDescription").innerHTML = "hello"; //res.data[0].caption.text;
-    }
-  });
-  feed.run();
-};
-</script>
- -->
 
 
         <!-- Global site tag (gtag.js) - Google Analytics -->

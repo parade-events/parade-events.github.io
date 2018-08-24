@@ -17,8 +17,14 @@ h1 {
   font-weight: bold;
 }
 
+
 .whiteLink {
   color: #fff;
+  font-size: 24px;
+}
+
+input {
+  border-radius: 5px;
 }
 
 .infoIcon {
@@ -57,6 +63,16 @@ h1 {
 #instaFeedPhoto {
 }
 
+button {
+  color: #fff;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  border-color: #fff;
+}
+
 /* main */
 .announcePanel {
   padding: 20px;
@@ -68,15 +84,16 @@ h1 {
 .announceTitle {
   text-decoration: none;
   color: #fff;
-  /* color: #fff; */
   font-weight: bold;
-  font-size: 20px;
-  text-align: center;
+  font-size: 21px;
 }
 
 /* main */
 .announceDescription {
-  font-size: 16px;
+  font-size: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
 }
 
 .prettyColor {
@@ -213,13 +230,18 @@ h1 {
   padding: 20px;
 }
 
-.singleLineContactField {
-  height:35px;
+.contactDescriptionStyle {
   width:80%;
 }
 
+.singleLineContactField {
+  height:35px;
+  width:75%;
+
+}
+
 .multiLineContactField {
-  width:80%;
+  width:75%;
 }
 
 
@@ -286,7 +308,7 @@ h1 {
 
   /* mobile view */
   .announcePanel {
-    text-align: center;
+    /* text-align: center; */
     width: 90%;
   }
 }
@@ -352,6 +374,10 @@ h1 {
     text-align: center;
   }
 
+  .bigAppPhoto {
+    display: none;
+  }
+
   #instaFeedContainer {
     width: 90%;
   }
@@ -365,7 +391,6 @@ h1 {
   }
 
   .secondPanel {
-    text-align: center;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -388,6 +413,21 @@ h1 {
     /* padding-right: 320px; */
     text-align: center;
     /* min-width: 200px; */
+  }
+
+  #leftContact {
+    width: 90%;
+    padding: 20px;
+  }
+
+  #rightContact {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .contactDescriptionStyle {
+    text-align: center;
+    margin:auto;
   }
 
   .meetTheTeamRow {
