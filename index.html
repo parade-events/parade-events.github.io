@@ -32,6 +32,10 @@
       <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
       <meta name="theme-color" content="#ffffff">
 
+      <!-- Contact form jquery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="/functions/sendMail.js"></script>
+
       <title>Parade Events</title>
   </head>
       <!-- <body onload='changeColor()'> -->
@@ -86,6 +90,12 @@
 
 
             <!-- START SECOND PANEL -->
+
+            <!-- Start DYnamic Panel -->
+          <div class="dynamicPanel" >
+
+            <img class="" style="padding-left:80px;width:auto;height:800px" src="./assets/aoun-may10.png" />
+
             <div id="Details" class= " secondPanel">
               <h2 class="prettyFontColor" style="font-size:60px;margin-bottom:25px">Meet Parade.</h2>
                 <p class=' mainDescription'>
@@ -106,90 +116,18 @@
               advertising their events to students. With Parade, simply post an event to your organization's page and communicate
               instantly with the Northeastern community.
              </p>
+
+
        </div>
-                <!-- <h2>Alpha Testing: May 2018</h2>
-                <h2>Beta Testing: Late Summer 2018</h2>
-                <h2>Pilot Launch: Fall 2018</h2> -->
+          </div>
+             <!-- End Dynamic Panel -->
 
-                <!-- Start DYnamic Panel -->
-              <div class="dynamicPanel" >
-                <!-- Start Announce Panel -->
-
-                <div class="announcePanel">
-                  <h2 class="prettyFontColor" style="font-size:60px;margin-bottom:25px">Announcements</h2>
-                <span id="announce"> Loading Announcements...</span>
-                      <!-- End Announce Panel  -->
-              </div>
-
-
-                <div id="instaFeedContainer">
-                  <h2 class="prettyFontColor" style="font-size:60px;margin-bottom:25px">Latest Spotlight</h2>
-                      <div id="instafeed"></div>
-                </div>
-              </div>
-
-
-
-
-
-                <!--  End Dynamic Panel -->
-
-    <!-- Timeline start. Thank you: https://codetea.com/simple-timeline-abstraction-with-css/ -->
-    <!-- <h2  class='prettyFontColor secondPanel'>Timeline</h2>
-    <div class='theTimelineDiv'>
-       <ul class="timeline" id="timeline">
-      <li class="li complete">
-        <div class="timestamp">
-          <span class="author complete"> Product Research</span>
-        </div>
-        <div class="status">
-          <h4>Spring 2018</h4>
-        </div>
-      </li>
-      <li class="li complete">
-        <div class="timestamp">
-          <span class="a
-          uthor complete">MVP Created</span>
-        </div>
-        <div class="status">
-          <h4>April</h4>
-        </div>
-      </li>
-      <li class="li complete">
-        <div class="timestamp">
-          <span class="author complete">Alpha Testing</span>
-        </div>
-        <div class="status">
-          <h4>May</h4>
-        </div>
-      </li>
-      <li class="li complete">
-        <div class="timestamp">
-          <span class="author">Orientation Outreach</span>
-        </div>
-        <div class="status">
-          <h4>Summer</h4>
-        </div>
-      </li>
-      <li class="li complete">
-        <div class="timestamp">
-          <span class="author">Beta Phase/Invite Orgs</span>
-        </div>
-        <div class="status">
-          <h4>Late Summer</h4>
-        </div>
-      </li>
-      <li class="li">
-        <div class="timestamp">
-          <span class="author">Pilot Launch</span>
-        </div>
-        <div class="status">
-          <h4>Fall 2018</h4>
-        </div>
-      </li>
-     </ul>
-   </div> -->
-        <!-- Timeline end. -->
+            <!-- Dynamic Panel 2 -->
+            <!-- <div class="dynamicPanel" >
+              <p id="instaFeedDescription">Loading...</p>
+              <img id="instaFeedPhoto" src='' />
+            </div> -->
+            <!--  End dynamic panel 2 -->
 
     <h2 class="prettyFontColor secondPanel" style="font-size:60px;margin-bottom:15px">Meet the Team.</h2>
 
@@ -282,45 +220,56 @@
                         </div>
 
               </div>
-
             </div>
+
             <!-- START THIRD PANEL -->
-            <div id="Contact" class="prettyColor thirdPanel">
+            <div id="Contact" class="prettyColor dynamicPanel thirdPanel">
 
-              <!-- <h2 style="font-size: 50px;margin-bottom:15px">Have ideas?</h2>
-              <p style="font-size:20px;margin-top:0px">
-                We're creating Parade for <i>you</i>. Whether you're a club president or new student,
-                let us know how we can make Parade better.
 
-                <br><a href='mailto:ideas@parade.events'> <strong>Let us know!</strong></a>
-              </p>
+              <div id="leftContact">
+                  <h2 style="font-size: 50px;margin-bottom:15px">Contact Us!</h2>
+              <form id="contact-form" method="post">
+                    <h2>Name</h2>
+                    <input type="text" placeholder="Your Name" id="contact-name" class="form-control singleLineContactField"  />
+                    <br>
+                    <h2>Email</h2>
+                    <input type="email" placeholder="Your Email" id="contact-email" class="form-control singleLineContactField" />
+                    <br>
+                    <h2>Feedback</h2>
+                    <textarea rows="10" id="contact-feedback" placeholder="Enter your message…" class="form-control multiLineContactField">
+                    </textarea>
+                    <br>
+                    <button type="button" style="margin-top:20px;" onClick="lambdaEmailSubmit()" class="btn" >Submit Feedback</button>
+                    <!-- TODO: Add some kind of capcha/CSRF -->
+              </form>
+              
+              <h2 style="font-size: 50px;margin-bottom:10px;margin-top:15px">Follow us!</h2>
+                <div>
+                  <a class="whiteLink" style="text-decoration: none" href="https://instagram.com/paradeapp">
+                    <img style="padding:5px;width:50px;height:50px"src='./assets/social/instagram-white.png'/>
+                  </a>
+                  <a class="whiteLink" style="text-decoration: none" href="https://facebook.com/paradeeventsapp">
+                    <img style="padding:5px;width:50px;height:50px"src='./assets/social/facebook-white.png'/>
+                  </a>
+                </div>
+            </div><!--end Left contact-->
 
-              <h2 style="font-size: 50px;margin-bottom:15px">Looking for a Project?</h2>
-              <p style="font-size:20px;margin-top:0px">
-                  Are you a Northeastern student interested in joining the Parade team?
-                  <br><a href="mailto:outreach@parade.events"><strong>Reach out!</strong></a>
-              </p> -->
+            <div id="rightContact">
+
 
               <h2 style="font-size: 50px;margin-bottom:15px">New to Parade?</h2>
               <p style="font-size:20px;margin-top:0px">
                 Check out our latest blog post:
                 <a class="whiteLink" href="https://parade.events/blog/welcome-guide">The Parade Welcome Guide</a>.
-
               </p>
 
-              <h2 style="font-size: 50px;margin-bottom:15px">Idea or Feedback?</h2>
-              <p style="font-size:20px;margin-top:0px">
-                Find a bug? Have a feature request? We'd love to <a class="whiteLink" href="mailto:feedback@parade.events">hear from you</a>.
-              </p>
+              <h2 class="" style="font-size:60px;margin-bottom:25px">Announcements</h2>
+              <span id="announce"> Loading Announcements...</span>
 
               <h2 style="font-size: 50px;margin-bottom:15px">Stay informed!</h2>
               <p style="font-size:20px;margin-top:0px">
                 Join our mailing list to keep up with Parade-related news!
               </p>
-
-
-
-
               <!-- Begin MailChimp Signup Form -->
   <style type="text/css">
   	#mc_embed_signup{justify-content: center;width:100%; margin-top: 0px}
@@ -353,17 +302,11 @@
   </div>
   <!--End mc_embed_signup-->
         <!-- Thanks for the logos: https://www.iconsdb.com/white-icons/facebook-like-3-icon.html -->
-        <h2 style="font-size: 50px;margin-bottom:10px;margin-top:15px">Follow us!</h2>
-          <div>
-            <a class="whiteLink" style="text-decoration: none" href="https://instagram.com/paradeapp">
-              <img style="padding:5px;width:50px;height:50px"src='./assets/social/instagram-white.png'/>
-            </a>
-            <a class="whiteLink" style="text-decoration: none" href="https://facebook.com/paradeeventsapp">
-              <img style="padding:5px;width:50px;height:50px"src='./assets/social/facebook-white.png'/>
-            </a>
-          </div>
 
-    </div>
+    </div><!-- end right contact -->
+
+  </div><!-- End Contact Panel -->
+
 
 
 
@@ -376,26 +319,28 @@
         </div>
 
 
-        <!-- Functions -->
+        <!-- Josh Functions -->
         <script src="/functions/announceAPI.js"></script>
-        <script type="text/javascript" src="/functions/instafeed.min.js"></script>
-        <script type="text/javascript">
-        var feed = new Instafeed({
-  get: "user",
-  userId: "7295831123",
-  accessToken: "7295831123.e303501.97a21cb4545749d2baeb34a2421a74d6", //scoped only to read public data.
-  limit: 1,
-  resolution: "low_resolution",
-  error: function(image) {
-    document.getElementById("instafeed").innerHTML =
-      "No Spotlight<br><br><br><br><br><br><br><br><br>";
-  },
-  template:
-    '<p class="instaFeedDescription">{{caption}}</p><a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
-});
-feed.run();
+        <!-- <script type="text/javascript" src="/functions/instafeed.min.js"></script>
+        <script>
+window.onload = function what() {
+  var feed = new Instafeed({
+    get: "user",
+    userId: "7295831123",
+    accessToken: "7295831123.e303501.97a21cb4545749d2baeb34a2421a74d6", //scoped only to read public data.
+    limit: 1,
+    resolution: "standard_resolution",
+    error: function(image) {
+      document.getElementById("instafeed").innerHTML = "No Spotlight<br>";
+    },
+    success: function(res) {
+      document.getElementById("instafeedDescription").innerHTML = "hello"; //res.data[0].caption.text;
+    }
+  });
+  feed.run();
+};
 </script>
-
+ -->
 
 
         <!-- Global site tag (gtag.js) - Google Analytics -->

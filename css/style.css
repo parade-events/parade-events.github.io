@@ -33,17 +33,28 @@ h1 {
   flex: 1;
 }
 
-#instaFeedContainer {
-  font-size: 23px;
-  width: 50%;
-  padding: 20px;
-  align-self: flex-end;
+.secondPanel {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 100px;
+  /* align-self: center; */
   margin: 0 auto !important;
 }
 
-.instaFeedDescription {
+#instaFeedContainer {
+  /* font-size: 23px;
+  width: 50%;
+  padding: 20px;
+  align-self: center;
+  margin: 0 auto !important; */
+}
+
+#instaFeedDescription {
   font-size: 16px;
   /* color: #fff; */
+}
+
+#instaFeedPhoto {
 }
 
 /* main */
@@ -56,10 +67,11 @@ h1 {
 /* main */
 .announceTitle {
   text-decoration: none;
-  color: #479ec6;
+  color: #fff;
   /* color: #fff; */
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
+  text-align: center;
 }
 
 /* main */
@@ -151,8 +163,6 @@ h1 {
   font-size: 23px;
 }
 
-
-
 .firstPanelHeading {
   padding-left: 40px;
   line-height: 0px;
@@ -162,13 +172,6 @@ h1 {
   flex-direction: row;
   display: flex;
   color: #fff;
-}
-
-.secondPanel {
-  text-align: center;
-  padding-left: 420px;
-  padding-right: 420px;
-  padding-bottom: 10px;
 }
 
 .meetTheTeam {
@@ -197,14 +200,29 @@ h1 {
 }
 
 .thirdPanel {
-  text-align: center;
-  padding-left: 450px;
-  padding-right: 450px;
-  padding-bottom: 20px;
-  display: flex;
-  flex-direction: column;
   color: #fff;
 }
+
+#leftContact {
+  width: 50%;
+  padding: 20px;
+}
+
+#rightContact {
+  width: 50%;
+  padding: 20px;
+}
+
+.singleLineContactField {
+  height:35px;
+  width:80%;
+}
+
+.multiLineContactField {
+  width:80%;
+}
+
+
 
 .fourthPanel {
   background-color: #808080;
@@ -268,8 +286,6 @@ h1 {
 
   /* mobile view */
   .announcePanel {
-    padding-left: 20px;
-    padding-right: 20px;
     text-align: center;
     width: 90%;
   }
@@ -310,7 +326,6 @@ h1 {
     flex-direction: column;
     padding-bottom: 0px;
   }
-
 
   .appDownloadButtons {
     /* display: flex; */
@@ -380,10 +395,10 @@ h1 {
     display: flex;
   }
 
-  .thirdPanel {
+  /* .thirdPanel {
     padding-left: 20px;
     padding-right: 20px;
-  }
+  } */
 
   .fourthPanel {
   }
