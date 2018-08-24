@@ -84,39 +84,24 @@
                       <!-- </div> -->
                 </div>
 
-                <!-- Start Announce Panel -->
-                <div class="announcePanel">
-                  <h2>Announcements</h2>
-                  <span id="announce"> Loading Announcements...</span>
-                        <!-- End Announce Panel  -->
-                </div>
-
-                <div id="instaFeedContainer">
-                  <h2>Spotlight</h2>
-                      <div id="instafeed"></div>
-                </div>
-
-
-
-
 
             <!-- START SECOND PANEL -->
-            <div id="Details" class="secondPanel">
+            <div id="Details" class= " secondPanel">
               <h2 class="prettyFontColor" style="font-size:60px;margin-bottom:25px">Meet Parade.</h2>
-                <p class='mainDescription'>
+                <p class=' mainDescription'>
               Parade is the platform for event discovery.  Parade is designed by Northeastern students,
               for Northeastern students, to communicate what’s happening on campus.  The app allows student organizations (orgs)
               to advertise their events, and for students to discover them. Keep up with what's going on in your favorite clubs,
               see who else has RSVP'd, and find new clubs and events that align with your interests.
                </p>
-               <h2 class="prettyFontColor">Students</h2>
-               <p class='mainDescription'>
+               <h2  class="prettyFontColor">Students</h2>
+               <p class=' mainDescription'>
                Why should the club fair at the beginning of the year be the only time to learn about
                what’s happening on campus? With Parade's discovery features, you can find new clubs and events at any point
                in the semester!
               </p>
-              <h2 class='prettyFontColor'>Organizations</h2>
-              <p class='mainDescription'>
+              <h2  class="prettyFontColor">Organizations</h2>
+              <p class=' mainDescription'>
               The Parade team recognizes that student leaders put hours of work each week in their clubs, many of which are spent
               advertising their events to students. With Parade, simply post an event to your organization's page and communicate
               instantly with the Northeastern community.
@@ -126,8 +111,31 @@
                 <h2>Beta Testing: Late Summer 2018</h2>
                 <h2>Pilot Launch: Fall 2018</h2> -->
 
+                <!-- Start DYnamic Panel -->
+              <div class="dynamicPanel" >
+                <!-- Start Announce Panel -->
+
+                <div class="announcePanel">
+                  <h2 class="prettyFontColor" style="font-size:60px;margin-bottom:25px">Announcements</h2>
+                <span id="announce"> Loading Announcements...</span>
+                      <!-- End Announce Panel  -->
+              </div>
+
+
+                <div id="instaFeedContainer">
+                  <h2 class="prettyFontColor" style="font-size:60px;margin-bottom:25px">Latest Spotlight</h2>
+                      <div id="instafeed"></div>
+                </div>
+              </div>
+
+
+
+
+
+                <!--  End Dynamic Panel -->
+
     <!-- Timeline start. Thank you: https://codetea.com/simple-timeline-abstraction-with-css/ -->
-    <h2  class='prettyFontColor secondPanel'>Timeline</h2>
+    <!-- <h2  class='prettyFontColor secondPanel'>Timeline</h2>
     <div class='theTimelineDiv'>
        <ul class="timeline" id="timeline">
       <li class="li complete">
@@ -180,7 +188,7 @@
         </div>
       </li>
      </ul>
-   </div>
+   </div> -->
         <!-- Timeline end. -->
 
     <h2 class="prettyFontColor secondPanel" style="font-size:60px;margin-bottom:15px">Meet the Team.</h2>
@@ -379,10 +387,11 @@
   limit: 1,
   resolution: "low_resolution",
   error: function(image) {
-    document.getElementById('instafeed').innerHTML='No Spotlight<br><br><br><br><br><br><br><br><br>';
+    document.getElementById("instafeed").innerHTML =
+      "No Spotlight<br><br><br><br><br><br><br><br><br>";
   },
-  template: '<p class="instaFeedDescription">{{caption}}</p><a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
-
+  template:
+    '<p class="instaFeedDescription">{{caption}}</p><a class="animation" href="{{link}}"><img src="{{image}}" /></a>'
 });
 feed.run();
 </script>
