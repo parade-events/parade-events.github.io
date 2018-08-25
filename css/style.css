@@ -247,10 +247,10 @@ button {
 
 
 .fourthPanel {
-  background-color: #808080;
+  background-color: #fff;
   display: flex;
-  /* flex-direction: column; */
-  /* text-align: right; */
+  flex-direction: column;
+  text-align: center;
 }
 
 .iphone {
