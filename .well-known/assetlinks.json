@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.parade",
+      "sha256_cert_fingerprints": [
+        "A3:2A:78:D1:DC:2E:88:75:1D:10:00:AA:6E:5C:A3:6B:0D:36:09:37:B4:A6:52:27:3C:E4:2F:64:78:4A:40:60",
+        "38:45:E3:E5:C2:1D:9F:4E:E4:D3:B3:01:5C:5B:1B:D5:6C:C9:6E:2E:17:AC:8F:13:4B:67:A0:6D:86:30:A5:FD"
+      ]
+    }
+  }
+]
