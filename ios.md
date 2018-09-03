@@ -4,6 +4,7 @@ permalink: /ios/
 redirect_from:
   - /iphone/
   - /ipad/
+  - /download/iphone
 redirect_to:
   - https://itunes.apple.com/us/app/parade-events/id1380171412
 ---
