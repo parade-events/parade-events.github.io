@@ -192,10 +192,10 @@ button {
 }
 
 .meetTheTeam {
-  flex-direction: row;
+  flex-direction: column;
   display: flex;
-  padding-left: 100px;
-  padding-right: 100px;
+  padding-left: 160px;
+  padding-right: 160px;
   text-align: center;
   /* min-width: 200px; */
 }
