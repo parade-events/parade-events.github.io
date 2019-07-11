@@ -3,323 +3,273 @@
 <!--Contact: josh<<@>>___parade.events -->
 <!-- Available on github. https://github.com/parade-events/parade-events.github.io -->
 <html>
-  <link href='./css/style.css' rel="stylesheet">
-  <link href='./css/timeline.css' rel="stylesheet">
+<link href='./css/style.css' rel="stylesheet">
+<link href='./css/timeline.css' rel="stylesheet">
 
-  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
-  <link href="https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
-  <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <meta name="description" content="An event discovery app for Northeastern University clubs and student organizations. Available now on Android, iPhone, and iPad.">
-      <meta name="keywords" content="Northeastern,aoun,iOS,Android,iPhone,App Store,Play Store,@paradeapp,@paradeeventsapp,Parade,elephant,blue,RSVP,NU,NEU,events,clubs,students,student organizations,student orgs,Northeastern University,Boston,MA,app,application,calendar,events calendar,SGA,university,CS,discover,study,huskies,fall fest,activities fair">
-      <meta name="author" content="Josh Spicer,Carter Tune">
-      <meta name="apple-itunes-app" content="app-id=1380171412">
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Titillium+Web:400,200,300,600,700' rel='stylesheet' type='text/css'>
+<link href="https://cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
 
-      <!-- Favicon -->
-      <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-      <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-      <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-      <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-      <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-      <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-      <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-      <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-      <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-      <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-      <link rel="manifest" href="favicon/manifest.json">
-      <meta name="msapplication-TileColor" content="#ffffff">
-      <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-      <meta name="theme-color" content="#ffffff">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="An event discovery app for Northeastern University clubs and student organizations. Available now on Android, iPhone, and iPad.">
+  <meta name="keywords"
+    content="Northeastern,aoun,iOS,Android,iPhone,App Store,Play Store,@paradeapp,@paradeeventsapp,Parade,elephant,blue,RSVP,NU,NEU,events,clubs,students,student organizations,student orgs,Northeastern University,Boston,MA,app,application,calendar,events calendar,SGA,university,CS,discover,study,huskies,fall fest,activities fair">
+  <meta name="author" content="Josh Spicer,Carter Tune">
+  <meta name="apple-itunes-app" content="app-id=1380171412">
 
-      <!-- Contact form jquery -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="/functions/sendMail.js"></script>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+  <link rel="manifest" href="favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
 
-      <!-- Start of Async Drift Code -->
-      <script>
-          "use strict";
+  <!-- Contact form jquery -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/functions/sendMail.js"></script>
 
-          !function() {
-              var t = window.driftt = window.drift = window.driftt || [];
-              if (!t.init) {
-                  if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
-                  t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
-                      t.factory = function(e) {
-                          return function() {
-                              var n = Array.prototype.slice.call(arguments);
-                              return n.unshift(e), t.push(n), t;
-                          };
-                      }, t.methods.forEach(function(e) {
-                      t[e] = t.factory(e);
-                  }), t.load = function(t) {
-                      var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
-                      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
-                      var i = document.getElementsByTagName("script")[0];
-                      i.parentNode.insertBefore(o, i);
-                  };
-              }
-          }();
-          drift.SNIPPET_VERSION = '0.3.1';
-          drift.load('xvgiyggvu4vz');
-      </script>
-      <!-- End of Async Drift Code -->
+  <!-- Start of Async Drift Code -->
+  <script>
+    "use strict";
 
-      <title>Parade Events</title>
-  </head>
-      <!-- <body onload='changeColor()'> -->
-      <body>
-        <div class="row">
-            <!-- START FIRST PANEL -->
-            <div class='prettyColor firstPanel'>
-                  <div class='navBar'>
-                      <!-- <img class='icon' src=./assets/icon.png /> -->
-                      <span class='navBarElements'>
-                        <a class="whiteLink" href='https://parade.events/blog' alt="Parade Blog" style='text-decoration: none;padding-right:20px'>Blog</a>
-                        <a class="whiteLink" style='text-decoration: none;  white-space: nowrap' href='#Contact'>Contact</a>
-                      </span>
-                   </div>
-                     <div class="stickLeft">
-                       <div class="firstPanelHeading">
-                         <noscript>
-                           This page utilizes Javascript to render correctly.
-                           Please consider enabling Javascript for the full
-                           experience!
-                         </noscript>
-                         <div class='logoAndName'>
-                           <img class='icon' alt="Parade elephant blue logo" src=./assets/RoundedIcon.png />
-                           <div class='paradeNameWithShortDescription'>
-                              <img class='paradeTitle' src=./assets/parade_font_white.png />
-                              <h2 style="margin-top: 8px;line-height: 27px;font-size:25.5px;">An events app for Northeastern clubs.</h2>
-                            </div>
-                          </div>
-                       </div>
-                       <p class="firstPanelBody">
-                         Northeastern has <strong>hundreds</strong> of events each week.
-                         <br>Discover them with Parade.
-                       </p>
-                     <div class="appDownloadButtons">
-                       <a style="text-decoration: none" href="https://itunes.apple.com/us/app/parade-events/id1380171412">
-                         <img
-                         class="dlButton"
-                         src='./assets/app-store-badge.svg' />
-                          </a>
-                       <a style="text-decoration: none" href="https://play.google.com/store/apps/details?id=com.parade">
-                        <img
-                        class="dlButton"
-                        src='./assets/play-store-badge.png' />
-                         </a>
-                     </div>
-                 </div>
-                     <!-- <div class="stickRight"> -->
-                          <img class='iphone' src='./assets/aoun-partial.png'>
-                      <!-- </div> -->
-                </div>
+    !function () {
+      var t = window.driftt = window.drift = window.driftt || [];
+      if (!t.init) {
+        if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+        t.invoked = !0, t.methods = ["identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on"],
+          t.factory = function (e) {
+            return function () {
+              var n = Array.prototype.slice.call(arguments);
+              return n.unshift(e), t.push(n), t;
+            };
+          }, t.methods.forEach(function (e) {
+            t[e] = t.factory(e);
+          }), t.load = function (t) {
+            var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+            o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+            var i = document.getElementsByTagName("script")[0];
+            i.parentNode.insertBefore(o, i);
+          };
+      }
+    }();
+    drift.SNIPPET_VERSION = '0.3.1';
+    drift.load('xvgiyggvu4vz');
+  </script>
+  <!-- End of Async Drift Code -->
 
+  <title>Parade Events</title>
+</head>
+<!-- <body onload='changeColor()'> -->
 
-            <!-- START SECOND PANEL -->
-
-            <!-- Start DYnamic Panel -->
-          <div class="dynamicPanel" >
-
-            <img class="bigAppPhoto" style="padding-left:80px;width:auto;height:800px" src="./assets/spotlight.png" />
-
-            <div id="Details" class= " secondPanel">
-              <h2 class="prettyFontColor" style="font-size:60px;margin-bottom:25px">Meet Parade.</h2>
-                <p class=' mainDescription'>
-              Parade is the platform for event discovery.  Parade is designed by Northeastern students,
-              for Northeastern students, to communicate what’s happening on campus.  The app allows student organizations (orgs)
-              to advertise their events, and for students to discover them. Keep up with what's going on in your favorite clubs,
-              see who else has RSVP'd, and find new clubs and events that align with your interests.
-               </p>
-               <h2  class="prettyFontColor">Students</h2>
-               <p class=' mainDescription'>
-               Why should the club fair at the beginning of the year be the only time to learn about
-               what’s happening on campus? With Parade's discovery features, you can find new clubs and events at any point
-               in the semester!
-              </p>
-              <h2  class="prettyFontColor">Organizations</h2>
-              <p class=' mainDescription'>
-              The Parade team recognizes that student leaders put hours of work each week in their clubs, many of which are spent
-              advertising their events to students. With Parade, simply post an event to your organization's page and communicate
-              instantly with the Northeastern community.
-             </p>
-
-
-       </div>
+<body>
+  <div class="row">
+    <!-- START FIRST PANEL -->
+    <div class='prettyColor firstPanel'>
+      <div class='navBar'>
+        <!-- <img class='icon' src=./assets/icon.png /> -->
+        <span class='navBarElements'>
+          <a class="whiteLink" href='https://parade.events/blog' alt="Parade Blog"
+            style='text-decoration: none;padding-right:20px'>Blog</a>
+          <a class="whiteLink" style='text-decoration: none;  white-space: nowrap' href='#Contact'>Contact</a>
+        </span>
+      </div>
+      <div class="stickLeft">
+        <div class="firstPanelHeading">
+          <noscript>
+            This page utilizes Javascript to render correctly.
+            Please consider enabling Javascript for the full
+            experience!
+          </noscript>
+          <div class='logoAndName'>
+            <img class='icon' alt="Parade elephant blue logo" src=./assets/RoundedIcon.png />
+            <div class='paradeNameWithShortDescription'>
+              <img class='paradeTitle' src=./assets/parade_font_white.png />
+              <h2 style="margin-top: 8px;line-height: 27px;font-size:25.5px;">An events app for Northeastern clubs.</h2>
+            </div>
           </div>
-             <!-- End Dynamic Panel -->
+        </div>
+        <p class="firstPanelBody">
+          Northeastern has <strong>hundreds</strong> of events each week.
+          <br>Discover them with Parade.
+        </p>
+        <div class="appDownloadButtons">
+          <a style="text-decoration: none" href="https://itunes.apple.com/us/app/parade-events/id1380171412">
+            <img class="dlButton" src='./assets/app-store-badge.svg' />
+          </a>
+          <a style="text-decoration: none" href="https://play.google.com/store/apps/details?id=com.parade">
+            <img class="dlButton" src='./assets/play-store-badge.png' />
+          </a>
+        </div>
+      </div>
+      <!-- <div class="stickRight"> -->
+      <img class='iphone' src='./assets/web1-cropped.png'>
+      <!-- </div> -->
+    </div>
 
-            <!-- Dynamic Panel 2 -->
-            <!-- <div class="dynamicPanel" >
+
+    <!-- START SECOND PANEL -->
+
+    <!-- Start DYnamic Panel -->
+    <div class="dynamicPanel">
+
+      <img class="bigAppPhoto" style="padding-left:80px;width:auto;height:800px" src="./assets/spotlight.png" />
+
+      <div id="Details" class=" secondPanel">
+        <h2 class="prettyFontColor" style="font-size:60px;margin-bottom:25px">Meet Parade.</h2>
+        <p class=' mainDescription'>
+          Parade is the platform for event discovery. Parade is designed by Northeastern students,
+          for Northeastern students, to communicate what’s happening on campus. The app allows student organizations
+          (orgs)
+          to advertise their events, and for students to discover them. Keep up with what's going on in your favorite
+          clubs,
+          see who else has RSVP'd, and find new clubs and events that align with your interests.
+        </p>
+        <h2 class="prettyFontColor">Students</h2>
+        <p class=' mainDescription'>
+          Why should the club fair at the beginning of the year be the only time to learn about
+          what’s happening on campus? With Parade's discovery features, you can find new clubs and events at any point
+          in the semester!
+        </p>
+        <h2 class="prettyFontColor">Organizations</h2>
+        <p class=' mainDescription'>
+          The Parade team recognizes that student leaders put hours of work each week in their clubs, many of which are
+          spent
+          advertising their events to students. With Parade, simply post an event to your organization's page and
+          communicate
+          instantly with the Northeastern community.
+        </p>
+
+
+      </div>
+    </div>
+    <!-- End Dynamic Panel -->
+
+    <!-- Dynamic Panel 2 -->
+    <!-- <div class="dynamicPanel" >
               <p id="instaFeedDescription">Loading...</p>
               <img id="instaFeedPhoto" src='' />
             </div> -->
-            <!--  End dynamic panel 2 -->
+    <!--  End dynamic panel 2 -->
 
     <h2 class="prettyFontColor secondPanel" style="font-size:60px;margin-bottom:15px">Meet the Team.</h2>
 
-              <div class='meetTheTeam'>
+    <div class='meetTheTeam'>
 
-                <div class='meetTheTeamRow'>
-                  <div class="bio">
-                    <img
-                    class='headshot'
-                    src='./assets/faces/carter.png'
-                    alt='carter' />
-                    <div>
-                      <!-- LICENSE: Icons made by SimpleIcon from www.flaticon.com and is licensed by http://creativecommons.org/licenses/by/3.0/ -->
-                      <a style="text-decoration: none" href="https://www.linkedin.com/in/carter-tune-14a287127/">
-                        <img style="padding:10px;padding-top:15px;width:20px;height:20px"src='./assets/social/linkedin.png'/>
-                      </a>
-                    </div>
+      <div class='meetTheTeamRow'>
+        <div class="bio">
+          <img class='headshot' src='./assets/faces/carter.png' alt='carter' />
+          <div>
+            <!-- LICENSE: Icons made by SimpleIcon from www.flaticon.com and is licensed by http://creativecommons.org/licenses/by/3.0/ -->
+            <a style="text-decoration: none" href="https://www.linkedin.com/in/carter-tune-14a287127/">
+              <img style="padding:10px;padding-top:15px;width:20px;height:20px" src='./assets/social/linkedin.png' />
+            </a>
+          </div>
 
-                    <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Carter Tune</h2>
-                    <h3 style="margin:0px">Developer</h3>
+          <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Carter Tune</h2>
+          <h3 style="margin:0px">Developer</h3>
 
-                    <p style="font-size:16px;">
-                      Carter studies Computer Science and recently completed his first co-op at
-                      SelfMade in New York City. Carter is involved in all stages of product development and takes an
-                      active role in planning and outreach.
-                  </p>
-                </div>
-                <div class='bio'>
-                    <img
-                    class='headshot'
-                    src='./assets/faces/josh.png'
-                    alt='josh' />
-                    <div>
-                      <a style="text-decoration: none" alt="joshspicer.com" href="https://joshspicer.com/">
-                        <img style="padding:10px;width:30px;height:30px"src='./assets/social/website.png'/>
-                      </a>
-                    </div>
+          <p style="font-size:16px;">
+            Carter studies Computer Science and recently completed his first co-op at
+            SelfMade in New York City. Carter is involved in all stages of product development and takes an
+            active role in planning and outreach.
+          </p>
+        </div>
+        <div class='bio'>
+          <img class='headshot' src='./assets/faces/josh.png' alt='josh' />
+          <div>
+            <a style="text-decoration: none" alt="joshspicer.com" href="https://joshspicer.com/">
+              <img style="padding:10px;width:30px;height:30px" src='./assets/social/website.png' />
+            </a>
+          </div>
 
-                    <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Josh Spicer</h2>
-                    <h3 style="margin:0px">Developer</h3>
+          <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Josh Spicer</h2>
+          <h3 style="margin:0px">Developer</h3>
 
-                    <p style="font-size:16px;">
-                      Josh is studying Computer Science/Cyber Operations and recently completed a co-op at
-                      Virtual Security Research (VSR). Josh is involved in product development while also
-                      handling deployment and management of Parade's cloud infrastructure.
-                  </p>
-                    </div>
-                </div>
-                <!-- ROW 1 END  -->
-          <div class='meetTheTeamRow'>
-            <div class='bio'>
-                  <img
-                  class='headshot'
-                  src='./assets/faces/kathleen.jpg'
-                  alt='kathleen' />
-                  <div>
-                    <a style="text-decoration: none" href="https://www.linkedin.com/in/kathleen-ballard-7009b011b/">
-                        <img style="padding:10px;padding-top:15px;margin-bottom:5px;width:20px;height:20px"src='./assets/social/linkedin.png'/>
-                    </a>
-                  </div>
-                  <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Kathleen Ballard</h2>
-                  <h3 style="margin:0px">Outreach</h3>
+          <p style="font-size:16px;">
+            Josh is studying Computer Science/Cyber Operations and recently completed a co-op at
+            Virtual Security Research (VSR). Josh is involved in product development while also
+            handling deployment and management of Parade's cloud infrastructure.
+          </p>
+        </div>
+      </div>
+      <!-- ROW 1 END  -->
+      <div class='meetTheTeamRow'>
+        <div class='bio'>
+          <img class='headshot' src='./assets/faces/kathleen.jpg' alt='kathleen' />
+          <div>
+            <a style="text-decoration: none" href="https://www.linkedin.com/in/kathleen-ballard-7009b011b/">
+              <img style="padding:10px;padding-top:15px;margin-bottom:5px;width:20px;height:20px"
+                src='./assets/social/linkedin.png' />
+            </a>
+          </div>
+          <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Kathleen Ballard</h2>
+          <h3 style="margin:0px">Outreach</h3>
 
-                  <p style="font-size:16px;">
-                    Kathleen is a third year Pharmacy student currently on co-op in Cape Cod.
-                    Kathleen works on communication and outreach initiatives for Parade,
-                    utilizing connections with SGA and Northeastern to help promote and improve the app.
-                  </p>
-                  </div>
+          <p style="font-size:16px;">
+            Kathleen is a third year Pharmacy student currently on co-op in Cape Cod.
+            Kathleen works on communication and outreach initiatives for Parade,
+            utilizing connections with SGA and Northeastern to help promote and improve the app.
+          </p>
+        </div>
 
-                  <div class='bio'>
-                        <img
-                        class='headshot'
-                        src='./assets/faces/pranita.jpg'
-                        alt='pranita' />
-                        <div>
-                          <a style="text-decoration: none" alt="http://pranitaloki.com" href="http://pranitaloki.com/">
-                            <img style="padding:10px;width:30px;height:30px"src='./assets/social/website.png'/>
-                          </a>
-                      </div>
-                        <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Pranita Lokinendi</h2>
-                        <h3 style="margin:0px">Designer</h3>
+        <div class='bio'>
+          <img class='headshot' src='./assets/faces/pranita.jpg' alt='pranita' />
+          <div>
+            <a style="text-decoration: none" alt="http://pranitaloki.com" href="http://pranitaloki.com/">
+              <img style="padding:10px;width:30px;height:30px" src='./assets/social/website.png' />
+            </a>
+          </div>
+          <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Pranita Lokinendi</h2>
+          <h3 style="margin:0px">Designer</h3>
 
-                        <p style="font-size:16px;">
-                          Pranita is a third year Interaction Design student, as well as a freelance graphic designer.
-                          She works as Parade’s UI/UX designer, ensuring both that the application’s interface is aesthetically
-                          pleasing and that users have positive experiences. She is currently on co-op in Boston at LevelUp.
-                        </p>
-                        </div>
-              </div>
-              <!-- ROW TWO END -->
+          <p style="font-size:16px;">
+            Pranita is a third year Interaction Design student, as well as a freelance graphic designer.
+            She works as Parade’s UI/UX designer, ensuring both that the application’s interface is aesthetically
+            pleasing and that users have positive experiences. She is currently on co-op in Boston at LevelUp.
+          </p>
+        </div>
+      </div>
+      <!-- ROW TWO END -->
 
-              <div class='meetTheTeamRow'>
-                <div class='bio'>
-                      <img
-                      class='headshot'
-                      src='./assets/faces/chris.jpg'
-                      alt='chris' />
-                      <div>
-                        <a style="text-decoration: none" href="https://www.linkedin.com/in/chrisreusch/">
-                            <img style="padding:10px;padding-top:15px;margin-bottom:5px;width:20px;height:20px"src='./assets/social/linkedin.png'/>
-                        </a>
-                      </div>
-                      <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Chris Reusch</h2>
-                      <h3 style="margin:0px">Developer</h3>
+    </div>
 
-                      <p style="font-size:16px;">
-                        Chris is a third year Applied Physics major and recently completed his co-op at Tesla in the Bay Area.
-                        Chris is involved in product development and data management.
-                      </p>
-                      </div>
-
-                      <div class='bio'>
-                            <img
-                            class='headshot'
-                            src='./assets/faces/casey.jpeg'
-                            alt='casey' />
-                            <div>
-                              <a style="text-decoration: none" href="https://www.linkedin.com/in/casey-paxton-585069138/">
-                                  <img style="padding:10px;padding-top:15px;margin-bottom:5px;width:20px;height:20px"src='./assets/social/linkedin.png'/>
-                              </a>
-                          </div>
-                            <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Casey Paxton</h2>
-                            <h3 style="margin:0px">Marketing</h3>
-
-                            <p style="font-size:16px;">
-                              Casey is a third year studying Communication Studies and Business Administration.
-                              She recently completed a co-op at Salsify doing employment branding,
-                              and has joined the Parade team as a Social Media Marketer
-                            </p>
-                            </div>
-                  </div>
-                  <!-- ROW 3 END -->
-
-              </div>
-
-            <!-- START THIRD PANEL -->
-            <div id="Contact" class="prettyColor dynamicPanel thirdPanel">
+    <!-- START THIRD PANEL -->
+    <div id="Contact" class="prettyColor dynamicPanel thirdPanel">
 
 
-              <div id="leftContact">
-                  <h2 style="font-size: 50px;margin-bottom:15px">Contact Us!</h2>
-                  <div class="contactDescriptionStyle">
-                  <p>
-                    Parade is currently in active development and looking for <strong>any and all feedback</strong>. Let us
-                    know your feature requests, bugs, or general thoughts.
-                  </p>
-                  <p>
-                    For spotlight submissions or other inquiries,
-                    a member of the Parade team will follow up with you at the address you provide.
-                  </p>
-                  <p>
-                    You can reach us at
-                  <a
-                    style="color:#fff"
-                    href="mailto:team@parade.events">
-                    team@parade.events
-                  </a>
-                  </p>
-                </div>
-<!--               <form id="contact-form" method="post">
+      <div id="leftContact">
+        <h2 style="font-size: 50px;margin-bottom:15px">Contact Us!</h2>
+        <div class="contactDescriptionStyle">
+          <p>
+            Parade is currently in active development and looking for <strong>any and all feedback</strong>. Let us
+            know your feature requests, bugs, or general thoughts.
+          </p>
+          <p>
+            For spotlight submissions or other inquiries,
+            a member of the Parade team will follow up with you at the address you provide.
+          </p>
+          <p>
+            You can reach us at
+            <a style="color:#fff" href="mailto:team@parade.events">
+              team@parade.events
+            </a>
+          </p>
+        </div>
+        <!--               <form id="contact-form" method="post">
                     <h2>Name</h2>
                     <input type="text" placeholder="  Joseph Aoun" id="contact-name" class="form-control singleLineContactField"  />
                     <br>
@@ -332,121 +282,87 @@
                     <br>
                     <button type="button" style="margin-top:20px;" onClick="lambdaEmailSubmit()" class="btn" >Submit Feedback</button>
               </form> -->
-              <br><br>
+        <br><br>
 
-              <h2 style="font-size: 50px;margin-bottom:10px;margin-top:15px">Join The Team!</h2>
-              <div class="contactDescriptionStyle">
-              <p>
-                Parade is a project driven entirely by Northeastern students. We're currently looking for more students to join
-                our dev team.
-              </p>
-              <p>
-                Interested? Send us a message at
-              <a
-                style="color:#fff"
-                href="mailto:team@parade.events">
-                team@parade.events
-              </a>
-              to learn more.
-              </p>
-            </div>
-
-              <h2 style="font-size: 50px;margin-bottom:10px;margin-top:15px">Follow us!</h2>
-                <div>
-                  <a class="whiteLink" style="text-decoration: none" href="https://instagram.com/paradeapp">
-                    <img style="padding:5px;width:50px;height:50px"src='./assets/social/instagram-white.png'/>
-                  </a>
-                  <a class="whiteLink" style="text-decoration: none" href="https://facebook.com/paradeeventsapp">
-                    <img style="padding:5px;width:50px;height:50px"src='./assets/social/facebook-white.png'/>
-                  </a>
-                </div>
-            </div><!--end Left contact-->
-
-            <div id="rightContact">
-
-
-              <h2 style="font-size: 50px;margin-bottom:15px">Latest Blog Post</h2>
-               <a style="text-decoration:none;color:#fff" href=" https://parade.events/blog/husky-startup/ ">
-                 <!-- <div class="announceTitle"><img class="infoIcon" src="/assets/info-white.png">  Parade Welcome Guide</div>
-               <div class="announceDescription"> Aug. 21 -    Welcome to Parade! Everybody on The Parade Team is so excited
-                 to get Parade in the  hands of students! We’re calling this initial launch our “Beta Phase”, where we encourage...</div></a></span> -->
-                 <div class="announceTitle"><img class="infoIcon" src="/assets/info-white.png">  Parade and the Husky Startup Challenge</div>
-               <div class="announceDescription"> Oct. 3 -
-                 A week ago, the Parade Team had the honor of speaking at this year’s first workshop in
-                  Northeastern’s fast-track to startup fame,
-                 the Husky Startup Challenge (HSC). Hosted by Entrepreneurs...</div></a></span>
-
-
-
-
-              <h2 class="" style="font-size:60px;margin-bottom:25px">News</h2>
-              <span id="announce"> Loading Announcements...</span>
-
-              <h2 style="font-size: 50px;margin-bottom:15px">Stay informed!</h2>
-              <p style="font-size:20px;margin-top:0px">
-                Join our mailing list to keep up with Parade-related news!
-              </p>
-              <!-- Begin MailChimp Signup Form -->
-  <style type="text/css">
-  	#mc_embed_signup{justify-content: center;width:100%; margin-top: 0px}
-  	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
-  	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-  </style>
-  <div id="mc_embed_signup">
-    <form
-    action="https://events.us12.list-manage.com/subscribe/post?u=0d6b1babc4796aa173b62e389&amp;id=576f377ee6"
-    method="post"
-    id="mc-embedded-subscribe-form"
-    name="mc-embedded-subscribe-form"
-    class="validate" rel="noopener noreferrer" target="_blank" novalidate>
-      <div id="mc_embed_signup_scroll">
-        <input
-            style="width:250px"
-            type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-        <div style="position: absolute; left: -5000px;" aria-hidden="true">
-          <input type="text" name="b_0d6b1babc4796aa173b62e389_576f377ee6" tabindex="-1" value="">
+        <h2 style="font-size: 50px;margin-bottom:10px;margin-top:15px">Join The Team!</h2>
+        <div class="contactDescriptionStyle">
+          <p>
+            Parade is a project driven entirely by Northeastern students. We're currently looking for more students to
+            join
+            our dev team.
+          </p>
+          <p>
+            Interested? Send us a message at
+            <a style="color:#fff" href="mailto:team@parade.events">
+              team@parade.events
+            </a>
+            to learn more.
+          </p>
         </div>
-        <div style="padding-left: 100px;padding-right:100px;padding-top:8px;">
-          <input type="submit"
-              style="color:#000;background-color:#fff"
-              value="Subscribe" name="subscribe"
-              id="mc-embedded-subscribe" class="button">
+
+        <h2 style="font-size: 50px;margin-bottom:10px;margin-top:15px">Follow us!</h2>
+        <div>
+          <a class="whiteLink" style="text-decoration: none" href="https://instagram.com/paradeapp">
+            <img style="padding:5px;width:50px;height:50px" src='./assets/social/instagram-white.png' />
+          </a>
+          <a class="whiteLink" style="text-decoration: none" href="https://facebook.com/paradeeventsapp">
+            <img style="padding:5px;width:50px;height:50px" src='./assets/social/facebook-white.png' />
+          </a>
         </div>
       </div>
-    </form>
-  </div>
-  <!--End mc_embed_signup-->
-        <!-- Thanks for the logos: https://www.iconsdb.com/white-icons/facebook-like-3-icon.html -->
+      <!--end Left contact-->
 
-    </div><!-- end right contact -->
-
-  </div><!-- End Contact Panel -->
+      <div id="rightContact">
 
 
+        <h2 style="font-size: 50px;margin-bottom:15px">Latest Blog Post</h2>
+        <a style="text-decoration:none;color:#fff" href=" https://parade.events/blog/husky-startup/ ">
+          <!-- <div class="announceTitle"><img class="infoIcon" src="/assets/info-white.png">  Parade Welcome Guide</div>
+               <div class="announceDescription"> Aug. 21 -    Welcome to Parade! Everybody on The Parade Team is so excited
+                 to get Parade in the  hands of students! We’re calling this initial launch our “Beta Phase”, where we encourage...</div></a></span> -->
+          <div class="announceTitle"><img class="infoIcon" src="/assets/info-white.png"> Parade and the Husky Startup
+            Challenge</div>
+          <div class="announceDescription"> Oct. 3 -
+            A week ago, the Parade Team had the honor of speaking at this year’s first workshop in
+            Northeastern’s fast-track to startup fame,
+            the Husky Startup Challenge (HSC). Hosted by Entrepreneurs...</div>
+        </a></span>
 
-            <!--- START FOURTH PANEL -->
-            <!-- <div id="Footer" class="fourthPanel">
+
+
+
+        <h2 class="" style="font-size:60px;margin-bottom:25px">News</h2>
+        <span id="announce"> Loading Announcements...</span>
+
+      </div><!-- end right contact -->
+
+    </div><!-- End Contact Panel -->
+
+
+
+    <!--- START FOURTH PANEL -->
+    <!-- <div id="Footer" class="fourthPanel">
             <a class="prettyFontColor" href="mailto:hello@parade.events"><b>Parade &copy 2018</b></a>
             </div> -->
 
 
 
-        <!-- Josh Functions -->
-        <script src="/functions/announceAPI.js"></script>
+    <!-- Josh Functions -->
+    <script src="/functions/announceAPI.js"></script>
 
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118030210-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-function gtag() {
-  dataLayer.push(arguments);
-}
-gtag("js", new Date());
-gtag("config", "UA-118030210-1");
-</script>
-      <!-- End Google Analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118030210-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      gtag("config", "UA-118030210-1");
+    </script>
+    <!-- End Google Analytics -->
 
-    </body>
+</body>
+
 </html>
