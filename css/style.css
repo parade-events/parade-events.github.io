@@ -17,7 +17,6 @@ h1 {
   font-weight: bold;
 }
 
-
 .whiteLink {
   color: #fff;
   font-size: 24px;
@@ -41,9 +40,6 @@ input {
 
 .secondPanel {
   text-align: center;
-  padding-left: 40px;
-  padding-right: 100px;
-  /* align-self: center; */
   margin: 0 auto !important;
 }
 
@@ -231,20 +227,17 @@ button {
 }
 
 .contactDescriptionStyle {
-  width:80%;
+  width: 80%;
 }
 
 .singleLineContactField {
-  height:35px;
-  width:75%;
-
+  height: 35px;
+  width: 75%;
 }
 
 .multiLineContactField {
-  width:75%;
+  width: 75%;
 }
-
-
 
 .fourthPanel {
   background-color: #fff;
@@ -427,7 +420,7 @@ button {
 
   .contactDescriptionStyle {
     text-align: center;
-    margin:auto;
+    margin: auto;
   }
 
   .meetTheTeamRow {
