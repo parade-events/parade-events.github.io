@@ -43,7 +43,7 @@
   <script src="/functions/sendMail.js"></script>
 
   <!-- Start of Async Drift Code -->
-  <script>
+  <!-- <script>
     "use strict";
 
     !function () {
@@ -68,8 +68,124 @@
     }();
     drift.SNIPPET_VERSION = '0.3.1';
     drift.load('xvgiyggvu4vz');
-  </script>
+  </script> -->
   <!-- End of Async Drift Code -->
+
+
+  <!-- Temporary  -->
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.8.2.js"></script>
+  <style type="text/css">
+    #overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #000;
+      filter: alpha(opacity=70);
+      -moz-opacity: 0.7;
+      -khtml-opacity: 0.7;
+      opacity: 0.7;
+      z-index: 100;
+      display: none;
+    }
+
+    .cnt223 a {
+      text-decoration: none;
+    }
+
+    .popup {
+      width: 100%;
+      margin: 0 auto;
+      display: none;
+      position: fixed;
+      z-index: 101;
+    }
+
+    .cnt223 {
+      min-width: 250px;
+      width: 250px;
+      min-height: 150px;
+      margin: 100px auto;
+      background: #f3f3f3;
+      position: relative;
+      z-index: 103;
+      padding: 15px 35px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px #000;
+    }
+
+    .cnt223 p {
+      clear: both;
+      color: #555555;
+      /* text-align: justify; */
+      font-size: 17px;
+      font-family: sans-serif;
+    }
+
+    .cnt223 p a {
+      color: #479ec6;
+      font-weight: bold;
+    }
+
+    .cnt223 .x {
+      float: right;
+      height: 35px;
+      left: 22px;
+      position: relative;
+      top: -25px;
+      width: 34px;
+    }
+
+    .cnt223 .x:hover {
+      cursor: pointer;
+    }
+  </style>
+  <script type='text/javascript'>
+    $(function () {
+      var overlay = $('<div id="overlay"></div>');
+      overlay.show();
+      overlay.appendTo(document.body);
+      $('.popup').show();
+      $('.close').click(function () {
+        $('.popup').hide();
+        overlay.appendTo(document.body).remove();
+        return false;
+      });
+
+
+
+
+      $('.x').click(function () {
+        $('.popup').hide();
+        overlay.appendTo(document.body).remove();
+        return false;
+      });
+    });
+  </script>
+  <div class='popup'>
+    <div class='cnt223'>
+      <h3>Notice</h3>
+      <p style="font-size: 10px;">Posted: April 2020</p>
+      <p>
+        Due to campus closures and various team members graduating (yay!), Parade is currently offline (boo).
+      </p>
+      <p>
+        We're hoping to continue with the project (in some capacity) in the near future.
+        Keep your eye on this page for Parade updates.
+      </p>
+      <p>
+        Have questions, ideas, or interest in contributing to Parade? Reach out!
+      </p>
+      <p>
+        <a href="mailto:josh@parade.events">josh@parade.events</a>
+      </p>
+      <br />
+      <a href='' class='close'>Close</a>
+      </p>
+    </div>
+  </div>
+  <!-- / Temporary -->
 
   <title>Parade Events</title>
 </head>
@@ -84,7 +200,7 @@
         <span class='navBarElements'>
           <a class="whiteLink" href='https://parade.events/blog' alt="Parade Blog"
             style='text-decoration: none;padding-right:20px'>Blog</a>
-            <a class="whiteLink" href='https://app.parade.events/' alt="web application"
+          <a class="whiteLink" href='https://app.parade.events/' alt="web application"
             style='text-decoration: none;padding-right:20px'>Webapp</a>
           <a class="whiteLink" style='text-decoration: none;  white-space: nowrap' href='#Contact'>Contact</a>
         </span>
@@ -187,8 +303,8 @@
           <h3 style="margin:0px">Developer</h3>
 
           <p style="font-size:16px;">
-            Carter is a fourth year CS student. He is involved in all stages of product development and 
-            takes an active role in planning and outreach. In the Fall he is headed to Silicon Valley to 
+            Carter is a fourth year CS student. He is involved in all stages of product development and
+            takes an active role in planning and outreach. In the Fall he is headed to Silicon Valley to
             co-op at Sumo Logic.
           </p>
         </div>
@@ -252,9 +368,9 @@
         </div>
       </div>
       <!-- ROW TWO END -->
-    <!-- END FOUNDERS SECTION -->
+      <!-- END FOUNDERS SECTION -->
 
-    <br/><br/>
+      <br /><br />
 
 
       <!-- START DEV TEAM SECTION -->
@@ -263,40 +379,40 @@
         <div class="bio">
           <img class='headshot' src='./assets/faces/brandon.jpg' alt='brandon' />
           <div>
-              <a style="text-decoration: none" href="http://brandonliang.com">
-                <img style="padding:10px;width:30px;height:30px" src='./assets/social/website.png' />
-                <a style="text-decoration: none" href="https://www.linkedin.com/in/bwliang/">
-                  <img style="padding:10px;padding-top:15px;margin-bottom:5px;width:20px;height:20px"
-                    src='./assets/social/linkedin.png' />
-                </a>
-            </div>
+            <a style="text-decoration: none" href="http://brandonliang.com">
+              <img style="padding:10px;width:30px;height:30px" src='./assets/social/website.png' />
+              <a style="text-decoration: none" href="https://www.linkedin.com/in/bwliang/">
+                <img style="padding:10px;padding-top:15px;margin-bottom:5px;width:20px;height:20px"
+                  src='./assets/social/linkedin.png' />
+              </a>
+          </div>
 
           <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Brandon Liang</h2>
           <h3 style="margin:0px">Developer</h3>
 
           <p style="font-size:16px;">
-             Brandon is a first year CS student. He is interested in software development, cybersecurity, 
-             data science, and pretty much anything else in CS you can think of. He is working on optimizing 
-             Parade’s user interface and formulating new ideas for the app.
+            Brandon is a first year CS student. He is interested in software development, cybersecurity,
+            data science, and pretty much anything else in CS you can think of. He is working on optimizing
+            Parade’s user interface and formulating new ideas for the app.
           </p>
         </div>
 
         <div class='bio'>
           <img class='headshot' src='./assets/faces/isabel.jpg' alt='isabel' />
           <div>
-          
-              <a style="text-decoration: none" href="https://www.linkedin.com/in/isabel-b/">
-                <img style="padding:10px;padding-top:15px;margin-bottom:5px;width:20px;height:20px"
-                  src='./assets/social/linkedin.png' />
-              </a>
+
+            <a style="text-decoration: none" href="https://www.linkedin.com/in/isabel-b/">
+              <img style="padding:10px;padding-top:15px;margin-bottom:5px;width:20px;height:20px"
+                src='./assets/social/linkedin.png' />
+            </a>
           </div>
           <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Isabel Bolger</h2>
           <h3 style="margin:0px">Developer</h3>
 
           <p style="font-size:16px;">
-            Isabel is a third year Computer Science major from Seattle. 
-            She is new to the Parade team and is excited to learn more about mobile app development. 
-            Her last internship was at Microsoft in Silicon Valley. In her free time she enjoys playing guitar, 
+            Isabel is a third year Computer Science major from Seattle.
+            She is new to the Parade team and is excited to learn more about mobile app development.
+            Her last internship was at Microsoft in Silicon Valley. In her free time she enjoys playing guitar,
             watching football, and playing with her dog.
           </p>
         </div>
@@ -304,78 +420,80 @@
       </div>
       <!-- ROW 1 END  -->
 
-       <div class='bio'>
-          <img class='headshot' src='./assets/faces/kirpal.jpeg' alt='kirpal' />
+      <div class='bio'>
+        <img class='headshot' src='./assets/faces/kirpal.jpeg' alt='kirpal' />
+        <div>
+          <a style="text-decoration: none" alt="" href="https://kirp.al/">
+            <img style="padding:10px;width:30px;height:30px" src='./assets/social/website.png' />
+            <a style="text-decoration: none" href="https://www.linkedin.com/in/kirpaldemian/">
+              <img style="padding:10px;padding-top:15px;margin-bottom:5px;width:20px;height:20px"
+                src='./assets/social/linkedin.png' />
+            </a>
+        </div>
+
+        <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Kirpal Demian</h2>
+        <h3 style="margin:0px">Developer</h3>
+
+        <p style="font-size:16px;">
+          Kirpal is a first year CS student.
+          He's mainly interested in web and app development,
+          with a focus on user interface design. He is also interested in
+          entrepreneurship and project management. Currently,
+          he is helping on the mobile app for Parade.
+
+        </p>
+
+      </div>
+      <!-- ROW TWO END -->
+      <!-- END DEV TEAM SECTION -->
+
+
+      <br /><br />
+
+      <!-- START OUTREACH TEAM SECTION -->
+      <h2 class="prettyFontColor">Outreach</h2>
+      <div class='meetTheTeamRow'>
+        <div class="bio">
+          <img class='headshot' src='./assets/faces/spencer.jpg' alt='spencer' />
           <div>
-            <a style="text-decoration: none" alt="" href="https://kirp.al/">
-              <img style="padding:10px;width:30px;height:30px" src='./assets/social/website.png' />
-              <a style="text-decoration: none" href="https://www.linkedin.com/in/kirpaldemian/">
-                <img style="padding:10px;padding-top:15px;margin-bottom:5px;width:20px;height:20px"
-                  src='./assets/social/linkedin.png' />
-              </a>
+            <!-- no links -->
           </div>
 
-          <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Kirpal Demian</h2>
-          <h3 style="margin:0px">Developer</h3>
+          <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Spencer Berg</h2>
+          <h3 style="margin:0px">Outreach</h3>
 
           <p style="font-size:16px;">
-            Kirpal is a first year CS student. 
-            He's mainly interested in web and app development, 
-            with a focus on user interface design. He is also interested in 
-            entrepreneurship and project management. Currently, 
-            he is helping on the mobile app for Parade.
-
+            Spencer is a first year Business Administration Student with a concentration in Entrepreneurship who also
+            plans to undertake Data Science.
+            Spencer works on the vision and planning for future updates of Parade, as well as extending community
+            outreach by gaining and reacting to valuable feedback.
           </p>
-           
-      </div> 
-      <!-- ROW TWO END -->
-    <!-- END DEV TEAM SECTION -->
-
-
-    <br /><br />
-
-          <!-- START OUTREACH TEAM SECTION -->
-          <h2 class="prettyFontColor">Outreach</h2>
-          <div class='meetTheTeamRow'>
-            <div class="bio">
-              <img class='headshot' src='./assets/faces/spencer.jpg' alt='spencer' />
-              <div>
-                 <!-- no links -->
-                </div>
-    
-              <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Spencer Berg</h2>
-              <h3 style="margin:0px">Outreach</h3>
-    
-              <p style="font-size:16px;">
-                  Spencer is a first year Business Administration Student with a concentration in Entrepreneurship who also plans to undertake Data Science. 
-                  Spencer works on the vision and planning for future updates of Parade, as well as extending community outreach by gaining and reacting to valuable feedback.
-              </p>
-            </div>
-            <div class="bio">
-              <img class='headshot' src='./assets/faces/grace.jpg' alt='grace' />
-              <div>
-                <a style="text-decoration: none" href="https://www.linkedin.com/in/graceyjyi">
-                  <img style="padding:10px;padding-top:15px;margin-bottom:5px;width:20px;height:20px"
-                    src='./assets/social/linkedin.png' />
-                    </a>
-                </div>
-    
-              <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Grace Yi</h2>
-              <h3 style="margin:0px">Outreach</h3>
-    
-              <p style="font-size:16px;">
-                Grace is a second year Business and Communication Studies major concentrating in Marketing.
-                She is also interested in healthcare management and consulting, and is looking forward to working 
-                with the outreach team to promote Parade around campus.
-              </p>
-            </div>
-
+        </div>
+        <div class="bio">
+          <img class='headshot' src='./assets/faces/grace.jpg' alt='grace' />
+          <div>
+            <a style="text-decoration: none" href="https://www.linkedin.com/in/graceyjyi">
+              <img style="padding:10px;padding-top:15px;margin-bottom:5px;width:20px;height:20px"
+                src='./assets/social/linkedin.png' />
+            </a>
           </div>
-          <!-- ROW 1 END  -->
-        <!-- END OUTREACH TEAM SECTION -->
+
+          <h2 style="margin-top: 8px;font-size:35px;margin-bottom:2px">Grace Yi</h2>
+          <h3 style="margin:0px">Outreach</h3>
+
+          <p style="font-size:16px;">
+            Grace is a second year Business and Communication Studies major concentrating in Marketing.
+            She is also interested in healthcare management and consulting, and is looking forward to working
+            with the outreach team to promote Parade around campus.
+          </p>
+        </div>
+
+      </div>
+      <!-- ROW 1 END  -->
+      <!-- END OUTREACH TEAM SECTION -->
 
 
-        <!-- PAST CONTRIBUTORS -->
+      <!-- PAST CONTRIBUTORS -->
 
 
 
